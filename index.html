@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Moloch Merch</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <div>Moloch</div>
+        <div>Moloch</div>
+        <div>Moloch</div>
+      </div>
+
+      <h1 class="title">Merch Style Guide</h1>
+
+      <!--  <p>Style guide for the Moloch Merch Shop</p> -->
+
+      <nav>
+        <a class="link-item" href="#branding">Branding</a>
+        <a class="link-item" href="#interactive_elements">Interactive Elements</a>
+        <a class="link-item" href="#text_elements">Text Elements</a>
+        <a class="link-item" href="#combined_elements">Combined Elements</a>
+        <a class="link-item" href="#product_listing">Product Listing Template</a>
+        <a class="link-item" href="#checkout">Checkout Template</a>
+        <a class="link-item" href="#citations">Citations</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container" id="branding">
+    <h2>Branding</h2>
+    <section>
+      <h3>Brand</h3>
+      <p>Moloch is a musician + artist whos visual aestetic matches the refined luxery found in his music. This style
+        guide serves to describe how the merchendise store can stay consistant with the overall brand.
+      </p>
+    </section>
+    <section>
+      <h3>Colour</h3>
+      <p>A monochrome colour pallet was selected to match the solomn nature of the music. Three greys were selected
+        that, when combined, provide a clean and readable look.</p>
+      <div class="colour-wrapper">
+        <div class="colour light">#FFFFFF</div>
+        <div class="colour medium">#949494</div>
+        <div class="colour dark">#E4E4E4</div>
+        <div class="colour darker">#292929</div>
+      </div>
+    </section>
+    <section>
+      <h3>Type</h3>
+      <h4>Cormorant Garamond</h4>
+      <p>Logotype</p>
+      <p>This is not to be used anywhere but for the logotype</p>
+      <div class="type-demo light logo">abcdefghijklmnopqrstuvwxyz</div>
+      <div class="type-demo bold logo">abcdefghijklmnopqrstuvwxyz</div>
+
+      <h4>Open Sans</h4>
+      <p>Main copy typeface</p>
+      <div class="type-demo light">abcdefghijklmnopqrstuvwxyz</div>
+      <div class="type-demo bold">abcdefghijklmnopqrstuvwxyz</div>
+    </section>
+
+  </section>
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section class="container" id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+
+    <section>
+      <h3>In-text link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.link</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="link"&gt;Link&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a class="link" href="#">Link</a>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section>
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.link-item</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="link-item"&gt;A Nav Link&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <div class="body-style">
+        <a class="link-item" href="#">A Nav Link</a>
+      </div>
+
+    </section>
+
+
+    <section>
+      <h3>Submit/Reset Buttons</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a href="#" class="button">Submit</a>
+    </section>
+
+
+    <section>
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>label.input</p>
+
+      <h4>Sample code:</h4>
+      <pre>
+        <code>&lt;div class=&quot;input-wrapper&quot;&gt;
+  &lt;label for=&quot;input&quot; class=&quot;input&quot;&gt;Label&lt;/label&gt;&lt;input type=&quot;text&quot; id=&quot;input&quot;&gt;
+&lt;/div&gt;</code>
+      </pre>
+      <h4>Rendered element:</h4>
+      <div class="input-wrapper">
+        <label for="input" class="input">Label</label><input type="text" id="input">
+      </div>
+
+    </section>
+
+
+    <section>
+      <h3>Radio Button with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>div.input-wrapper</p>
+
+      <h4>Sample code:</h4>
+      <pre>
+        <code>&lt;div class=&quot;input-wrapper&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;example&quot; id=&quot;radio&quot;&gt; &lt;label for=&quot;radio&quot;&gt;An Option&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;example&quot; id=&quot;radio2&quot;&gt; &lt;label for=&quot;radio2&quot;&gt;Another Option&lt;/label&gt;
+&lt;/div&gt;</code>
+      </pre>
+
+      <h4>Rendered element:</h4>
+      <div class="input-wrapper">
+        <input type="radio" name="example" id="radio"> <label for="radio">An Option</label>
+        <input type="radio" name="example" id="radio2"> <label for="radio2">Another Option</label>
+      </div>
+    </section>
+
+
+    <section>
+      <h3>Image as a Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>N/A</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/shirt.jpg&quot; alt=&quot;T Shirt&quot;&gt;&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a href="#"><img src="images/shirt.jpg" alt="T Shirt"></a>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section class="container" id="text_elements">
+    <h2>Text Elements</h2>
+
+    <section>
+      <h3>Headings</h3>
+
+      <h4>CSS selector:</h4>
+      <p>N/A</p>
+
+      <h4>Sample code:</h4>
+      <pre>
+<code>&lt;h1&gt;Heading One&lt;/h1&gt;
+&lt;h2&gt;Heading Two&lt;/h2&gt;
+&lt;h3&gt;Heading Three&lt;/h3&gt;
+&lt;h4&gt;Heading Four&lt;/h4&gt;</code>
+        </pre>
+
+      <h4>Rendered elements:</h4>
+
+      <h1>Heading One</h1>
+      <h2>Heading Two</h2>
+      <h3>Heading Three</h3>
+      <h4>Heading Four</h4>
+    </section>
+
+    <section>
+      <h3>Paragraphs</h3>
+
+      <h4>CSS selector:</h4>
+      <p>N/A</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit.&lt;/p&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione deleniti id minima aspernatur dolor
+        veritatis laborum non, exercitationem commodi accusamus. Exercitationem sed eum doloribus necessitatibus
+        accusamus dolore nulla numquam vero.</p>
+    </section>
+
+    <section>
+      <h3>Numbered Lists</h3>
+
+      <h4>CSS selector:</h4>
+      <p>N/A</p>
+
+      <h4>Sample code:</h4>
+      <pre> <code>&lt;ol&gt;
+  &lt;li&gt;Thing&lt;/li&gt;
+  &lt;li&gt;Thing&lt;/li&gt;
+  &lt;li&gt;Thing&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+      <h4>Rendered element:</h4>
+      <ol>
+        <li>Thing</li>
+        <li>Thing</li>
+        <li>Thing</li>
+      </ol>
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section class="container" id="combined_elements">
+    <h2>Combined Elements</h2>
+
+    <section>
+      <h3>Main Navigation</h3>
+      <div class="body-style">
+        <nav>
+          <a class="link-item" href="#">Page One</a>
+          <a class="link-item" href="#">Page Two</a>
+          <a class="link-item" href="#">Page Three</a>
+        </nav>
+      </div>
+    </section>
+
+    <section id="product_listing">
+      <h3>Product Listing</h3>
+      <div class="product">
+        <figure>
+          <img src="images/shirt.jpg" alt="">
+          <figcaption>Moloch T-Shirt</figcaption>
+        </figure>
+        <div class="price">$60</div>
+        <div class="buy"></div>
+      </div>
+    </section>
+
+    <section id="checkout">
+      <h3>Payment Form</h3>
+      <form action="#">
+        <div class="col-6">
+          <h4>Shipping Info</h4>
+          <div class="input-wrapper">
+            <label for="name">Name</label><input type="text" id="name">
+          </div>
+          <div class="input-wrapper">
+            <label for="email">Email</label><input type="text" id="email">
+          </div>
+          <div class="input-wrapper">
+            <label for="address">Address</label><input type="text" id="address">
+          </div>
+          <div class="input-wrapper">
+            <label for="city">City</label><input type="text" id="city">
+          </div>
+          <div class="input-wrapper">
+            <label for="province">Province</label><input type="text" id="province">
+          </div>
+          <div class="input-wrapper">
+            <label for="postal">Postal</label><input type="text" id="postal">
+          </div>
+        </div>
+        <div class="col-6">
+          <h4>Billing Info</h4>
+          <div class="input-wrapper">
+            <label>Cards Accepted: </label>
+            <div class="cards">
+              <i class="fab fa-cc-visa"></i><input type="radio" name="cardtype" id="visa">
+              <i class="fab fa-cc-amex"></i><input type="radio" name="cardtype" id="amex">
+              <i class="fab fa-cc-mastercard"></i><input type="radio" name="cardtype" id="mastercard">
+              <i class="fab fa-cc-discover"></i><input type="radio" name="cardtype" id="discover">
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="cname">Name on Card</label><input type="text" id="cname">
+          </div>
+          <div class="input-wrapper">
+            <label for="cc">Credit Card</label><input type="text" id="cc">
+          </div>
+          <div class="input-wrapper">
+            <label for="emonth">Exp Month</label><input type="text" id="emonth">
+          </div>
+          <div class="input-wrapper">
+            <label for="emonth">Exp Year</label><input type="text" id="eyear">
+          </div>
+          <div class="input-wrapper">
+            <label for="cvv">CVV</label><input type="text" id="cvv">
+          </div>
+        </div>
+        <button>Checkout</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Checkout Cart</h3>
+
+      <div class="checkout-cart">
+        <h3><i class="fa fa-shopping-cart"></i> Cart</h3>
+        <div class="items">
+          <i class="fas fa-tshirt"></i>
+          <a class="link" href="#">Moloch T-Shirt</a>
+          <div class="info"> x2</div>
+        </div>
+        <div>Total: 120</div>
+        <button>Checkout</button>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="container" id="citations">
+    <h2>Citations</h2>
+    <section>
+      <h3>Sources</h3>
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a class="link" href="https://fonts.google.com/specimen/Open+Sans">https://fonts.google.com/specimen/Open+Sans</a></li>
+        <li>Robertson, Christian. Designer. 2011. <strong>Roboto Mono [Font]</strong>. Retrieved from <a class="link"
+            href="https://fonts.google.com/specimen/Roboto+Mono">https://fonts.google.com/specimen/Roboto+Mono</a></li>
+        <li>Catharsis Fonts. Designer. 2015. <strong>Cormorant Garamond [Font]</strong>. Retrieved from <a class="link"
+            href="https://fonts.google.com/specimen/Cormorant+Garamond">https://fonts.google.com/specimen/Cormorant+Garamond</a></li>
+        <li>Used as reference: <a class="link" href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a></li>
+        <li>Icons used from Font Awesome <a href="https://fontawesome.com/" class="link">https://fontawesome.com/</a></li>
+      </ul>
+    </section>
+
+  </section>
+
+</body>
+
+</html>

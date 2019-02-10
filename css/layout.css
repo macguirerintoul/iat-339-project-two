@@ -1,0 +1,44 @@
+/*
+  LAYOUT STYLES 
+  General layout styles 
+*/
+
+/* 
+    Phone: 500px
+    Table: 800px
+    Desktop: 1000px
+*/
+
+
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-6 {
+    width: 100%;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        max-width: 700px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1080px;
+    }
+    .col-6 {
+        width: 49.7%;
+    }
+}
