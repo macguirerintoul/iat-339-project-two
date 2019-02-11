@@ -1,6 +1,6 @@
 class FooterElement extends HTMLElement {
   connectedCallback() {
-    var template = `
+    var template = ` 
       <footer>
         <div>
           <h4>Contact Us</h4>
