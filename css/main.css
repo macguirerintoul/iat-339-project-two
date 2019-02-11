@@ -1,6 +1,6 @@
 /*
-  STYLE GUIDE STYLING 
-  Moloch Merch styling for the style guide 
+  STYLE GUIDE STYLING
+  Moloch Merch styling for the style guide
 */
 
 /* CSS Variables */
@@ -16,7 +16,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     padding: 2rem;
     background-color: var(--colour-darker);
-    color: var(--colour-darker);
+    color: var(--colour-light);
 }
 
 .body-style {
@@ -32,6 +32,7 @@ section {
     background-color: var(--colour-light);
     border: solid 1px var(--colour-light);
     border-radius: 5px;
+    color: var(--colour-darker);
 }
 
 body > section {
@@ -144,7 +145,7 @@ code {
     max-width: 50em;
 }
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -198,7 +199,7 @@ a.link-item:hover, a.link-item:focus {
     outline: none;
 }
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -213,7 +214,7 @@ a.link:hover, a.link:focus {
     padding-bottom: 5px;
 }
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
@@ -355,7 +356,7 @@ input[type=radio] {
     color: var(--colour-light);
 }
 
-/* 
+/*
   CUSTOM PAGE ELEMENTS -------------------
 */
 
