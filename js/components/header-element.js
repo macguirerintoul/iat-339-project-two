@@ -1,4 +1,4 @@
-class HeaderComponent extends HTMLElement {
+class HeaderElement extends HTMLElement {
   connectedCallback() {
     var template = `
       <div class="logo-container">
@@ -11,4 +11,4 @@ class HeaderComponent extends HTMLElement {
   }
 };
 
-customElements.define('header-component', HeaderComponent);
+customElements.define('header-element', HeaderElement);
