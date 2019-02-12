@@ -1,6 +1,5 @@
 /*
-  STYLE GUIDE STYLING
-  Moloch Merch styling for the style guide
+  Moloch Merch Styles
 */
 
 /* CSS Variables */
@@ -27,38 +26,7 @@ body {
     padding: 1em;
 }
 
-section {
-    margin-bottom: 25px;
-    background-color: var(--colour-light);
-    border: solid 1px var(--colour-light);
-    border-radius: 5px;
-    color: var(--colour-darker);
-}
-
-body > section {
-    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
-}
-
-body > section > h2 {
-    color: var(--colour-darker);
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    display: block;
-    border-bottom: solid 1px black;
-    width: fit-content;
-    margin: 1em auto;
-}
-
-section section {
-    margin-bottom: 0px;
-    background-color: var(--colour-light);
-    border-radius: 0px;
-    padding: 2em;
-}
-
+/* Text styles  */
 h1 {
     font-size: 24px;
     text-transform: uppercase;
@@ -99,8 +67,48 @@ h4 {
 p {
     margin-top: 0;
     max-width: 50em;
-    font-size: 12px;
+    font-size: 1rem;
 }
+
+/* <section> styles */
+section {
+    margin-bottom: 25px;
+    padding: 2em;
+    background-color: var(--colour-light);
+    border: solid 1px var(--colour-light);
+    border-radius: 5px;
+    color: var(--colour-darker);
+}
+
+section p {
+  margin: auto;
+}
+
+body > section {
+    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+section > h2 {
+    color: var(--colour-darker);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    border-bottom: solid 1px black;
+    width: fit-content;
+    margin: 1em auto;
+}
+
+section section {
+    margin-bottom: 0px;
+    background-color: var(--colour-light);
+    border-radius: 0px;
+    padding: 2em;
+}
+
+
 
 li {
     margin-bottom: 1em;
@@ -125,10 +133,6 @@ li {
 
     h4 {
         margin-bottom: 0.25rem;
-    }
-
-    p {
-        font-size: 14px;
     }
 }
 

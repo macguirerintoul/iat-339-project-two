@@ -11,7 +11,7 @@ class HeaderElement extends HTMLElement {
       <nav>
         <a class="link-item" href="#branding">Merch</a>
         <a class="link-item" href="#interactive_elements">Music</a>
-        <a class="link-item" href="#interactive_elements">About</a>
+        <a class="link-item" href="/about/">About</a>
       </nav>
     </header>
     `
