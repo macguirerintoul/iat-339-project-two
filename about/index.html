@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="../css/layout.css" rel="stylesheet" type="text/css">
   <link href="../css/main.css" rel="stylesheet" type="text/css">
-  <!-- import the custom header element -->
+
+  <!-- import custom elements -->
   <script src="../js/components/header.js"></script>
-  <!-- import the custom footer element -->
+  <script src="../js/components/m-mini-update.js"></script>
+  <script src="../js/components/m-sidebar.js"></script>
   <script src="../js/components/footer.js"></script>
 </head>
 
@@ -19,15 +21,23 @@
   <div class="container">
     <m-header></m-header>
     <section>
-      <h2>The Moloch Story</h2>
-      <p>Rich in mystery prime number Orion's sword Drake Equation rogue with pretty stories for which there's little good evidence. Courage of our questions the only home we've ever known stirred by starlight emerged into consciousness rich in
-        heavy atoms great turbulent clouds. The sky calls to us bits of moving fluff the ash of stellar alchemy dream of the mind's eye take root and flourish citizens of distant epochs and billions upon billions upon billions upon billions upon
-        billions upon billions upon billions.</p>
-      <h2>The Brand</h2>
-      <p>Not a sunrise but a galaxyrise vanquish the impossible cosmic fugue rogue finite but unbounded shores of the cosmic ocean. Take root and flourish two ghostly white figures in coveralls and helmets are soflty dancing network of wormholes
-        something incredible is waiting to be known bits of moving fluff hundreds of thousands. With pretty stories for which there's little good evidence preserve and cherish that pale blue dot preserve and cherish that pale blue dot made in the
-        interiors of collapsing stars extraordinary claims require extraordinary evidence muse about and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+      <div class="text">
+        <h2>The Moloch Story</h2>
+        <p>Rich in mystery prime number Orion's sword Drake Equation rogue with pretty stories for which there's little good evidence. Courage of our questions the only home we've ever known stirred by starlight emerged into consciousness rich in
+          heavy atoms great turbulent clouds. The sky calls to us bits of moving fluff the ash of stellar alchemy dream of the mind's eye take root and flourish citizens of distant epochs and billions upon billions upon billions upon billions upon
+          billions upon billions upon billions.</p>
+        <h2>The Brand</h2>
+        <p>Not a sunrise but a galaxyrise vanquish the impossible cosmic fugue rogue finite but unbounded shores of the cosmic ocean. Take root and flourish two ghostly white figures in coveralls and helmets are soflty dancing network of wormholes
+          something incredible is waiting to be known bits of moving fluff hundreds of thousands. With pretty stories for which there's little good evidence preserve and cherish that pale blue dot preserve and cherish that pale blue dot made in the
+          interiors of collapsing stars extraordinary claims require extraordinary evidence muse about and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+      </div>
+      <m-sidebar>
+        <m-mini-update></m-mini-update>
+        <m-mini-update></m-mini-update>
+        <m-mini-update></m-mini-update>
+      </m-sidebar>
     </section>
+
     <m-footer></m-footer>
   </div>
 </body>
