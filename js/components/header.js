@@ -7,6 +7,11 @@ class HeaderElement extends HTMLElement {
         <div>Moloch</div>
         <div>Moloch</div>
       </div>
+      <nav>
+        <a class="link-item" href="#branding">Merch</a>
+        <a class="link-item" href="#interactive_elements">Music</a>
+        <a class="link-item" href="#interactive_elements">About</a>
+      </nav>
     `
     this.innerHTML = template;
   }
