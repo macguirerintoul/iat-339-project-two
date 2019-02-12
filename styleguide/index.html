@@ -14,6 +14,7 @@
   <!-- import the custom Web Componenets -->
   <script src="../js/components/header.js"></script>
   <script src="../js/components/footer.js"></script>
+  <script src="../js/components/product-listing.js"></script>
 
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </head>
@@ -275,14 +276,7 @@
 
     <section id="product_listing">
       <h3>Product Listing</h3>
-      <div class="product">
-        <figure>
-          <img src="images/shirt.jpg" alt="">
-          <figcaption>Moloch T-Shirt</figcaption>
-        </figure>
-        <div class="price">$60</div>
-        <div class="buy"></div>
-      </div>
+      <m-product-listing name="T-Shirt" price="60" image="../images/shirt.jpg"></m-product-listing>
     </section>
 
     <section id="checkout">
