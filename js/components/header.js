@@ -2,6 +2,7 @@ class HeaderElement extends HTMLElement {
   connectedCallback() {
     /*html*/
     var template = `
+    <header>
       <div class="logo-container">
         <div>Moloch</div>
         <div>Moloch</div>
@@ -12,6 +13,7 @@ class HeaderElement extends HTMLElement {
         <a class="link-item" href="#interactive_elements">Music</a>
         <a class="link-item" href="#interactive_elements">About</a>
       </nav>
+    </header>
     `
     this.innerHTML = template;
   }
