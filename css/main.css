@@ -72,12 +72,21 @@ p {
 
 /* <section> styles */
 section {
-    margin-bottom: 25px;
-    padding: 2em;
-    background-color: var(--colour-light);
-    border: solid 1px var(--colour-light);
-    border-radius: 5px;
-    color: var(--colour-darker);
+  display: flex;
+  margin-bottom: 25px;
+  padding: 2em;
+  background-color: var(--colour-light);
+  border: solid 1px var(--colour-light);
+  border-radius: 5px;
+  color: var(--colour-darker);
+}
+
+section .text {
+  width: 100%;
+}
+
+m-sidebar {
+  padding-left: 1em;
 }
 
 section p {
@@ -88,7 +97,7 @@ body > section {
     box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
-section > h2 {
+section h2 {
     color: var(--colour-darker);
     font-size: 20px;
     font-weight: 300;
