@@ -1,5 +1,6 @@
 class FooterElement extends HTMLElement {
   connectedCallback() {
+    /*html*/
     var template = ` 
       <footer>
         <div>
@@ -14,4 +15,4 @@ class FooterElement extends HTMLElement {
   }
 };
 
-customElements.define('footer-element', FooterElement);
+customElements.define('m-footer', FooterElement);

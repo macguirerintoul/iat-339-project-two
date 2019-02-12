@@ -1,5 +1,6 @@
 class HeaderElement extends HTMLElement {
   connectedCallback() {
+    /*html*/
     var template = `
       <div class="logo-container">
         <div>Moloch</div>
@@ -11,4 +12,4 @@ class HeaderElement extends HTMLElement {
   }
 };
 
-customElements.define('header-element', HeaderElement);
+customElements.define('m-header', HeaderElement);

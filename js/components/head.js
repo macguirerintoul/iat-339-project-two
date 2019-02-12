@@ -1,5 +1,6 @@
 class HeadElement extends HTMLElement {
   connectedCallback() {
+    /*html*/
     var template = `
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400" rel="stylesheet">
@@ -12,4 +13,4 @@ class HeadElement extends HTMLElement {
   }
 };
 
-customElements.define('head-element', HeadElement);
+customElements.define('m-head', HeadElement);
