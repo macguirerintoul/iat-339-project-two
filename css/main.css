@@ -87,10 +87,12 @@ section .text {
 
 m-sidebar {
   padding-left: 1em;
+  max-width: 20em;
 }
 
 section p {
-  margin: auto;
+  margin: 0 0 1em 0;
+
 }
 
 body > section {
