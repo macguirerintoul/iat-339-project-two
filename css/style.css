@@ -90,8 +90,12 @@ section {
 
 section .text {
   box-sizing: border-box;
-  width: 70%;
+  width: 100%;
   padding-right: 2em;
+}
+
+section .text.with-sidebar {
+  width: 70%;
 }
 
 m-sidebar {
