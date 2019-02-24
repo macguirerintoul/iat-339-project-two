@@ -78,14 +78,17 @@ p {
 
 /* <section> styles */
 section {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 25px;
   padding: 2em;
   background-color: var(--colour-light);
   border: solid 1px var(--colour-light);
   border-radius: 5px;
   color: var(--colour-darker);
+}
+
+section.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 section .text {
