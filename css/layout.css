@@ -1,9 +1,9 @@
 /*
-  LAYOUT STYLES 
-  General layout styles 
+  LAYOUT STYLES
+  General layout styles
 */
 
-/* 
+/*
     Phone: 500px
     Table: 800px
     Desktop: 1000px
@@ -21,10 +21,10 @@
     display: inline-block;
 }
 
-@media only screen and (min-width: 500px) {
-    .container {
-        max-width: 500px;
-    }
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
 }
 
 @media only screen and (min-width: 800px) {

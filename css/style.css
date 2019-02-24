@@ -27,6 +27,12 @@ body {
     padding: 1em;
 }
 
+.container-products {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 /* Text styles  */
 h1 {
     font-size: 24px;
@@ -74,6 +80,7 @@ p {
 /* <section> styles */
 section {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 25px;
   padding: 2em;
   background-color: var(--colour-light);
@@ -83,17 +90,30 @@ section {
 }
 
 section .text {
-  width: 100%;
+  box-sizing: border-box;
+  width: 70%;
+  padding-right: 2em;
 }
 
 m-sidebar {
-  padding-left: 1em;
-  max-width: 20em;
+  width: 30%;
+}
+
+@media all and (max-width: 800px) {
+  section .text {
+    width: 100%;
+  }
+  m-sidebar {
+    width: 100%;
+  }
 }
 
 section p {
   margin: 0 0 1em 0;
+}
 
+section a {
+  word-break: break-all;
 }
 
 body > section {
@@ -285,18 +305,42 @@ input[type=radio] {
     flex-grow: 0;
 }
 
-.product {
-    max-width: 250px;
-    padding: 15px 0;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+m-product-listing {
+  width: 25%;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.product img {
+@media all and (max-width: 1200px) {
+  m-product-listing {
+    width: 33.333333%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  m-product-listing {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  m-product-listing {
+    width: 100%;
+  }
+}
+
+
+
+
+
+.product-listing img {
     width: 100%;
 }
 
-.product figcaption {
+.product-listing figcaption {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -304,11 +348,11 @@ input[type=radio] {
     margin-top: 5px;
 }
 
-.product figure {
+.product-listing figure {
     margin-bottom: 5px;
 }
 
-.product .price {
+.product-listing .price {
     text-align: center;
     color: var(--colour-dark);
     font-weight: 600;
