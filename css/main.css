@@ -16,6 +16,7 @@ body {
     padding: 2rem;
     background-color: var(--colour-darker);
     color: var(--colour-light);
+    overflow-y: overlay;
 }
 
 .body-style {
