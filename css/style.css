@@ -293,6 +293,11 @@ a img:hover {
     margin-right: 10px;
 }
 
+.input-wrapper textarea {
+  width: 100%;
+  border: none;
+}
+
 input {
     border: none;
     border-left: lightgrey solid 1px;
