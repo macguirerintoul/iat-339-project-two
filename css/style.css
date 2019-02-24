@@ -79,6 +79,7 @@ p {
 /* <section> styles */
 section {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 25px;
   padding: 2em;
   background-color: var(--colour-light);
@@ -88,17 +89,30 @@ section {
 }
 
 section .text {
-  width: 100%;
+  box-sizing: border-box;
+  width: 70%;
+  padding-right: 2em;
 }
 
 m-sidebar {
-  padding-left: 1em;
-  max-width: 20em;
+  width: 30%;
+}
+
+@media all and (max-width: 800px) {
+  section .text {
+    width: 100%;
+  }
+  m-sidebar {
+    width: 100%;
+  }
 }
 
 section p {
   margin: 0 0 1em 0;
+}
 
+section a {
+  word-break: break-all;
 }
 
 body > section {
