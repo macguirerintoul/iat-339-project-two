@@ -344,6 +344,15 @@ m-product-listing {
     }
 }
 
+img {
+    width: 100%;
+}
+
+.product-listing {
+    text-decoration: none;
+    color: black;
+}
+
 .product-listing img {
     width: 100%;
 }
@@ -539,4 +548,10 @@ m-product-listing {
         font-family: 'Cormorant Garamond', serif;
         font-size: 35px;
     }
+}
+
+/* Grid Layout */
+.grid-demo > div{
+    background-color: var(--colour-medium);
+    height: 2em;
 }
