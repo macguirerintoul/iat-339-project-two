@@ -4,9 +4,14 @@ class HeaderElement extends HTMLElement {
     var template = `
     <header>
       <div class="logo-container">
-        <div>Moloch</div>
-        <div>Moloch</div>
-        <div>Moloch</div>
+        <div class="logo">
+          <div>Moloch</div>
+          <div>Moloch</div>
+          <div>Moloch</div>
+        </div>
+        <a class="cart" href="/checkout/">
+          <i class="fas fa-shopping-cart"></i> 1
+        </a>
       </div>
       <nav>
         <a class="link-item" href="/">Home</a>

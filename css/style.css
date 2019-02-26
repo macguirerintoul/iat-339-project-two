@@ -12,7 +12,7 @@
 
 /* Base Styles */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -32,9 +32,9 @@ body {
 }
 
 .container-products {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 /* Text styles  */
@@ -83,48 +83,48 @@ p {
 
 /* <section> styles */
 section {
-  margin-bottom: 25px;
-  padding: 2em;
-  background-color: var(--colour-light);
-  border: solid 1px var(--colour-light);
-  border-radius: 5px;
-  color: var(--colour-darker);
+    margin-bottom: 25px;
+    padding: 2em;
+    background-color: var(--colour-light);
+    border: solid 1px var(--colour-light);
+    border-radius: 5px;
+    color: var(--colour-darker);
 }
 
 section.with-sidebar {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section .text {
-
-  width: 100%;
+    width: 100%;
 }
 
 section div.with-sidebar {
-  width: 70%;
-  padding-right: 2em;
+    width: 70%;
+    padding-right: 2em;
 }
 
 m-sidebar {
-  width: 30%;
+    width: 30%;
 }
 
 @media all and (max-width: 800px) {
-  section div.with-sidebar {
-    width: 100%;
-  }
-  m-sidebar {
-    width: 100%;
-  }
+    section div.with-sidebar {
+        width: 100%;
+    }
+
+    m-sidebar {
+        width: 100%;
+    }
 }
 
 section p {
-  margin: 0 0 1em 0;
+    margin: 0 0 1em 0;
 }
 
 section a {
-  word-break: break-all;
+    word-break: break-all;
 }
 
 body > section {
@@ -151,8 +151,6 @@ section section {
     border-radius: 0px;
     padding: 2em;
 }
-
-
 
 li {
     margin-bottom: 1em;
@@ -189,6 +187,7 @@ code {
     display: block;
     border-radius: 5px;
     color: var(--colour-light);
+
     /* word-wrap: break-word; */
     max-width: 50em;
     overflow-x: scroll;
@@ -298,8 +297,8 @@ a img:hover {
 }
 
 .input-wrapper textarea {
-  width: 100%;
-  border: none;
+    width: 100%;
+    border: none;
 }
 
 input {
@@ -325,24 +324,24 @@ input[type=radio] {
 }
 
 m-product-listing {
-  width: 33.33333%;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+    width: 33.33333%;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 @media all and (max-width: 1200px) {
-  m-product-listing {
-    width: 50%;
-  }
+    m-product-listing {
+        width: 50%;
+    }
 }
 
 @media all and (max-width: 500px) {
-  m-product-listing {
-    width: 100%;
-  }
+    m-product-listing {
+        width: 100%;
+    }
 }
 
 .product-listing img {
@@ -375,9 +374,9 @@ m-product-listing {
 }
 
 .checkout-cart .items {
-  border-bottom: 1px solid var(--colour-medium);
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+    border-bottom: 1px solid var(--colour-medium);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .checkout-cart h2, .checkout-cart .info {
@@ -411,8 +410,8 @@ m-product-listing {
 }
 
 .colour.medium {
-  background-color: var(--colour-medium);
-  color: var(--colour-light);
+    background-color: var(--colour-medium);
+    color: var(--colour-light);
 }
 
 .colour.dark {
@@ -439,6 +438,18 @@ m-product-listing {
     margin-bottom: 1em;
     color: rgb(255, 255, 255);
     border: var(--colour-light) solid 1px;
+    height: 1em;
+    position: relative;
+}
+
+.logo-container .cart {
+    font-size: 0.4em;
+    float: right;
+    margin-right: 20px;
+    margin-top: 13px;
+    color: var(--colour-light);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 500px) {
@@ -447,7 +458,16 @@ m-product-listing {
     }
 }
 
-.logo-container > div {
+.logo-container .logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.logo-container .logo > div {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
     text-transform: uppercase;
