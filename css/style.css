@@ -229,6 +229,7 @@ a.link-item:hover, a.link-item:focus {
 .button, button {
     font-size: 11px;
     text-transform: uppercase;
+    background-color: unset;
     border-radius: 5px;
     text-decoration: none;
     color: var(--colour-darker);
