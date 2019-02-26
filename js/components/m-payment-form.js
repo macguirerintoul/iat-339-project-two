@@ -30,21 +30,18 @@ class PaymentForm extends HTMLElement {
         <div class="input-wrapper">
           <label>Cards Accepted: </label>
           <div class="cards">
-            <input type="radio" name="cardtype" id="visa">
+            <input type="radio" name="cardtype" id="visa" aria-label="Visa">
             <i class="fab fa-cc-visa"></i>
-            <label for="visa">Visa</label>
 
-            <input type="radio" name="cardtype" id="amex">
+            <input type="radio" name="cardtype" id="amex" aria-label="Amex">
             <i class="fab fa-cc-amex"></i>
-            <label for="amex">Amex</label>
 
-            <input type="radio" name="cardtype" id="mastercard">
+
+            <input type="radio" name="cardtype" id="mastercard" aria-label="MasterCard">
             <i class="fab fa-cc-mastercard"></i>
-            <label for="mastercard">MasterCard</label>
 
-            <input type="radio" name="cardtype" id="discover">
+            <input type="radio" name="cardtype" id="discover" aria-label="Discover">
             <i class="fab fa-cc-discover"></i>
-            <label for="discover">Discover</label>
           </div>
         </div>
         <div class="input-wrapper">

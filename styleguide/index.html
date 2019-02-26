@@ -24,8 +24,12 @@
   <script src="../js/components/m-product-listing.js"></script>
   <script src="../js/components/m-payment-form.js"></script>
 
+
   <!-- Add syntax highlighting JavaScript library -->
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+  <!-- Add HTML encoding JavaScript library -->
+  <script src="../js/he.js"></script>
 </head>
 
 <body>
@@ -296,9 +300,10 @@
 
         </code>
       </pre>
+      <!-- Inserts the sample code into the element above -->
       <script type="text/javascript">
         var mpfsc = new PaymentForm();
-        document.querySelector("#m-payment-form-sample-code").innerHTML = mpfsc.template;
+        document.querySelector("#m-payment-form-sample-code").innerHTML = he.encode(mpfsc.template);
       </script>
 
       <m-payment-form></m-payment-form>
