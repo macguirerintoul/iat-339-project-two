@@ -1,6 +1,8 @@
 /*
-  STYLE GUIDE STYLING 
-  Moloch Merch styling for the style guide 
+  Moloch Merch Styles
+
+  References:
+  https://www.w3schools.com/howto/howto_css_checkout_form.asp
 */
 
 /* CSS Variables */
@@ -12,11 +14,16 @@
 }
 
 /* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     padding: 2rem;
     background-color: var(--colour-darker);
-    color: var(--colour-darker);
+    color: var(--colour-light);
+    overflow-y: overlay;
 }
 
 .body-style {
@@ -27,37 +34,13 @@ body {
     padding: 1em;
 }
 
-section {
-    margin-bottom: 25px;
-    background-color: var(--colour-light);
-    border: solid 1px var(--colour-light);
-    border-radius: 5px;
+.container-products {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-body > section {
-    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
-}
-
-body > section > h2 {
-    color: var(--colour-darker);
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    display: block;
-    border-bottom: solid 1px black;
-    width: fit-content;
-    margin: 1em auto;
-}
-
-section section {
-    margin-bottom: 0px;
-    background-color: var(--colour-light);
-    border-radius: 0px;
-    padding: 2em;
-}
-
+/* Text styles  */
 h1 {
     font-size: 24px;
     text-transform: uppercase;
@@ -98,7 +81,78 @@ h4 {
 p {
     margin-top: 0;
     max-width: 50em;
-    font-size: 12px;
+    font-size: 1rem;
+}
+
+/* <section> styles */
+section {
+    margin-bottom: 25px;
+    padding: 2em;
+    background-color: var(--colour-light);
+    border: solid 1px var(--colour-light);
+    border-radius: 5px;
+    color: var(--colour-darker);
+}
+
+section.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .text {
+    width: 100%;
+}
+
+section div.with-sidebar {
+    width: 70%;
+    padding-right: 2em;
+}
+
+m-sidebar {
+    width: 30%;
+}
+
+@media all and (max-width: 800px) {
+    section div.with-sidebar {
+        width: 100%;
+    }
+
+    m-sidebar {
+        width: 100%;
+    }
+}
+
+section p {
+    margin: 0 0 1em 0;
+}
+
+section a {
+    word-break: break-all;
+}
+
+body > section {
+    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--colour-darker);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    border-bottom: solid 1px black;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 1em auto;
+}
+
+section section {
+    margin-bottom: 0px;
+    background-color: var(--colour-light);
+    border-radius: 0px;
+    padding: 2em;
 }
 
 li {
@@ -125,10 +179,6 @@ li {
     h4 {
         margin-bottom: 0.25rem;
     }
-
-    p {
-        font-size: 14px;
-    }
 }
 
 code {
@@ -140,11 +190,13 @@ code {
     display: block;
     border-radius: 5px;
     color: var(--colour-light);
-    word-wrap: break-word;
+
+    /* word-wrap: break-word; */
     max-width: 50em;
+    overflow-x: scroll;
 }
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -180,6 +232,7 @@ a.link-item:hover, a.link-item:focus {
 .button, button {
     font-size: 11px;
     text-transform: uppercase;
+    background-color: unset;
     border-radius: 5px;
     text-decoration: none;
     color: var(--colour-darker);
@@ -198,7 +251,7 @@ a.link-item:hover, a.link-item:focus {
     outline: none;
 }
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -213,7 +266,7 @@ a.link:hover, a.link:focus {
     padding-bottom: 5px;
 }
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
@@ -246,6 +299,11 @@ a img:hover {
     margin-right: 10px;
 }
 
+.input-wrapper textarea {
+    width: 100%;
+    border: none;
+}
+
 input {
     border: none;
     border-left: lightgrey solid 1px;
@@ -268,18 +326,41 @@ input[type=radio] {
     flex-grow: 0;
 }
 
-.product {
-    max-width: 250px;
-    padding: 15px 0;
+m-product-listing {
+    width: 33.33333%;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.product img {
+@media all and (max-width: 1200px) {
+    m-product-listing {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    m-product-listing {
+        width: 100%;
+    }
+}
+
+img {
     width: 100%;
 }
 
-.product figcaption {
+.product-listing {
+    text-decoration: none;
+    color: black;
+}
+
+.product-listing img {
+    width: 100%;
+}
+
+.product-listing figcaption {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -287,11 +368,11 @@ input[type=radio] {
     margin-top: 5px;
 }
 
-.product figure {
+.product-listing figure {
     margin-bottom: 5px;
 }
 
-.product .price {
+.product-listing .price {
     text-align: center;
     color: var(--colour-dark);
     font-weight: 600;
@@ -305,9 +386,9 @@ input[type=radio] {
 }
 
 .checkout-cart .items {
-  border-bottom: 1px solid var(--colour-medium);
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+    border-bottom: 1px solid var(--colour-medium);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .checkout-cart h2, .checkout-cart .info {
@@ -327,7 +408,7 @@ input[type=radio] {
 
 .colour {
     display: inline-block;
-    height: 3.75em;
+    height: 6em;
     width: 6em;
     border-radius: 50%;
     margin-right: 1em;
@@ -341,8 +422,8 @@ input[type=radio] {
 }
 
 .colour.medium {
-  background-color: var(--colour-medium);
-  color: var(--colour-light);
+    background-color: var(--colour-medium);
+    color: var(--colour-light);
 }
 
 .colour.dark {
@@ -355,7 +436,7 @@ input[type=radio] {
     color: var(--colour-light);
 }
 
-/* 
+/*
   CUSTOM PAGE ELEMENTS -------------------
 */
 
@@ -369,6 +450,18 @@ input[type=radio] {
     margin-bottom: 1em;
     color: rgb(255, 255, 255);
     border: var(--colour-light) solid 1px;
+    height: 1em;
+    position: relative;
+}
+
+.logo-container .cart {
+    font-size: 0.4em;
+    float: right;
+    margin-right: 20px;
+    margin-top: 13px;
+    color: var(--colour-light);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 500px) {
@@ -377,7 +470,16 @@ input[type=radio] {
     }
 }
 
-.logo-container > div {
+.logo-container .logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.logo-container .logo > div {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -449,4 +551,10 @@ input[type=radio] {
         font-family: 'Cormorant Garamond', serif;
         font-size: 35px;
     }
+}
+
+/* Grid Layout */
+.grid-demo > div{
+    background-color: var(--colour-medium);
+    height: 2em;
 }
