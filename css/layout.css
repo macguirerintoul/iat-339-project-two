@@ -1,9 +1,9 @@
 /*
-  LAYOUT STYLES 
-  General layout styles 
+  LAYOUT STYLES
+  General layout styles
 */
 
-/* 
+/*
     Phone: 500px
     Table: 800px
     Desktop: 1000px
@@ -16,15 +16,15 @@
     margin-right: auto;
 }
 
-.col-6 {
+.col-1 , .col-2 , .col-3 , .col-4 , .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     width: 100%;
     display: inline-block;
 }
 
-@media only screen and (min-width: 500px) {
-    .container {
-        max-width: 500px;
-    }
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -38,7 +38,40 @@
     .container {
         max-width: 1080px;
     }
+    .col-1 {
+        width: 8.3%;
+    }
+    .col-2 {
+        width: 16.6%;
+    }
+    .col-3 {
+        width: 24.9%;
+    }
+    .col-4 {
+        width: 33.3%;
+    }
+    .col-5 {
+        width: 41.6%;
+    }
     .col-6 {
         width: 49.7%;
+    }
+    .col-7 {
+        width: 58.3%;
+    }
+    .col-8 {
+        width: 66.6%;
+    }
+    .col-9 {
+        width: 74.9%;
+    }
+    .col-10 {
+        width: 83.3%;
+    }
+    .col-11 {
+        width: 91.6%;
+    }
+    .col-12 {
+        width: 100%;
     }
 }
