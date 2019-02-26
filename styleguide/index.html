@@ -357,7 +357,7 @@
       <script type="text/javascript">
         var mcsc = new Cart();
         mcsc.connectedCallback();
-        document.querySelector("#cart-sample-code").innerHTML = he.encode(mcsc.innerHTML);
+        document.querySelector("#cart-sample-code").innerHTML = he.encode(commonTags.stripIndent(mcsc.innerHTML));
       </script>
 
       <h4>Rendered element:</h4>
