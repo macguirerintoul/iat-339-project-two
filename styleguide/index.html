@@ -21,6 +21,7 @@
   <!-- Import custom elements -->
   <script src="../js/components/m-header.js"></script>
   <script src="../js/components/m-footer.js"></script>
+  <script src="../js/components/m-cart.js"></script>
   <script src="../js/components/m-product-listing.js"></script>
   <script src="../js/components/m-payment-form.js"></script>
 
@@ -231,7 +232,7 @@
       <h3>Paragraphs</h3>
 
       <h4>CSS selector:</h4>
-      <p>N/A</p>
+      <p><code>p</code></p>
 
       <h4>Sample code:</h4>
       <code class="prettyprint lang-html">&lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit.&lt;/p&gt;</code>
@@ -246,7 +247,7 @@
       <h3>Numbered Lists</h3>
 
       <h4>CSS selector:</h4>
-      <p>N/A</p>
+      <p><code>ol, ol li</code></p>
 
       <h4>Sample code:</h4>
       <pre class="prettyprint lang-html"> <code>&lt;ol&gt;
@@ -285,7 +286,23 @@
 
     <section id="product_listing">
       <h3>Product Listing</h3>
-      <m-product-listing name="T-Shirt" price="60" image="../images/pfizer-tee.jpg"></m-product-listing>
+
+      <h4>CSS selector:</h4>
+      <p>m-product-listing</p>
+
+      <h4>Sample code:</h4>
+      <pre><code id="product-listing-sample-code"></code></pre>
+      <script type="text/javascript">
+        var mplsc = new ProductListing();
+        mplsc.setAttribute('name', "Pfizer Tee");
+        mplsc.setAttribute('image', "../images/pfizer-tee.jpg");
+        mplsc.setAttribute('price', "29.99");
+        mplsc.connectedCallback();
+        document.querySelector("#product-listing-sample-code").innerHTML = he.encode(mplsc.innerHTML);
+      </script>
+
+      <h4>Rendered element:</h4>
+      <m-product-listing name="Pfizer Tee" price="29.99" image="../images/pfizer-tee.jpg"></m-product-listing>
     </section>
 
     <section id="checkout">
@@ -306,22 +323,27 @@
         document.querySelector("#m-payment-form-sample-code").innerHTML = he.encode(mpfsc.template);
       </script>
 
+      <h4>Rendered element:</h4>
       <m-payment-form></m-payment-form>
     </section>
 
     <section>
       <h3>Checkout Cart</h3>
 
-      <div class="checkout-cart">
-        <h3><i class="fa fa-shopping-cart"></i> Cart</h3>
-        <div class="items">
-          <i class="fas fa-tshirt"></i>
-          <a class="link" href="#">Moloch T-Shirt</a>
-          <div class="info"> x2</div>
-        </div>
-        <div>Total: 120</div>
-        <button>Checkout</button>
-      </div>
+      <h4>CSS selector:</h4>
+      <p><code>m-cart</code></p>
+
+      <h4>Sample code:</h4>
+      <pre><code id="cart-sample-code"></code></pre>
+      <!-- Inserts the sample code into the element above -->
+      <script type="text/javascript">
+        var mcsc = new Cart();
+        mcsc.connectedCallback();
+        document.querySelector("#cart-sample-code").innerHTML = he.encode(mcsc.innerHTML);
+      </script>
+
+      <h4>Rendered element:</h4>
+      <m-cart></m-cart>
     </section>
 
   </section>
