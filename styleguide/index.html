@@ -31,6 +31,9 @@
 
   <!-- Add HTML encoding JavaScript library -->
   <script src="../js/he.js"></script>
+
+  <!-- Add common-tags JavaScript library to strip indents from template literals -->
+  <script src="https://unpkg.com/common-tags"></script>
 </head>
 
 <body>
@@ -275,6 +278,21 @@
 
     <section>
       <h3>Main Navigation</h3>
+
+      <h4>CSS selector:</h4>
+      <p><code>nav</code></p>
+
+      <h4>Sample code:</h4>
+      <pre>
+        <code id="main-navigation-sample-code">&#x3C;nav&#x3E;
+  &#x3C;a class=&#x22;link-item&#x22; href=&#x22;#&#x22;&#x3E;Page One&#x3C;/a&#x3E;
+  &#x3C;a class=&#x22;link-item&#x22; href=&#x22;#&#x22;&#x3E;Page Two&#x3C;/a&#x3E;
+  &#x3C;a class=&#x22;link-item&#x22; href=&#x22;#&#x22;&#x3E;Page Three&#x3C;/a&#x3E;
+&#x3C;/nav&#x3E;</code>
+      </pre>
+      <!-- Insert sample code into the element above -->
+
+      <h4>Rendered element</h4>
       <div class="body-style">
         <nav>
           <a class="link-item" href="#">Page One</a>
@@ -298,7 +316,7 @@
         mplsc.setAttribute('image', "../images/pfizer-tee.jpg");
         mplsc.setAttribute('price', "29.99");
         mplsc.connectedCallback();
-        document.querySelector("#product-listing-sample-code").innerHTML = he.encode(mplsc.innerHTML);
+        document.querySelector("#product-listing-sample-code").innerHTML = he.encode(commonTags.stripIndent(mplsc.innerHTML));
       </script>
 
       <h4>Rendered element:</h4>
@@ -320,7 +338,7 @@
       <!-- Inserts the sample code into the element above -->
       <script type="text/javascript">
         var mpfsc = new PaymentForm();
-        document.querySelector("#m-payment-form-sample-code").innerHTML = he.encode(mpfsc.template);
+        document.querySelector("#m-payment-form-sample-code").innerHTML = he.encode(commonTags.stripIndent(mpfsc.template));
       </script>
 
       <h4>Rendered element:</h4>
