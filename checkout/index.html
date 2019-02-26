@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Music | Moloch Merch</title>
+  <title>Checkout | Moloch Merch</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,8 +18,8 @@
 
   <!-- import custom elements -->
   <script src="../js/components/m-header.js"></script>
-  <script src="../js/components/m-mini-update.js"></script>
-  <script src="../js/components/m-sidebar.js"></script>
+  <script src="../js/components/m-cart.js"></script>
+  <script src="../js/components/m-payment-form.js"></script>
   <script src="../js/components/m-footer.js"></script>
 </head>
 
@@ -28,8 +28,10 @@
     <m-header></m-header>
     <section>
       <div class="text">
-        <h2>Music</h2>
-        <p>thing</p>
+        <h2>Checkout</h2>
+
+        <m-cart></m-cart>
+        <m-payment-form></m-payment-form>
       </div>
     </section>
     <m-footer></m-footer>

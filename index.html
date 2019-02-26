@@ -5,6 +5,10 @@
   <title>Moloch Merch</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Add Cormorant Garamond and Open Sans from Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400" rel="stylesheet">
@@ -20,14 +24,16 @@
   <!-- Import custom elements -->
   <script src="js/components/m-header.js"></script>
   <script src="js/components/m-product-listing.js"></script>
+  <script src="js/components/m-sidebar.js"></script>
+  <script src="js/components/m-mini-update.js"></script>
   <script src="js/components/m-footer.js"></script>
 </head>
 
 <body>
   <div class="container">
     <m-header></m-header>
-    <section>
-      <div class="container-products">
+    <section class="with-sidebar">
+      <div class="container-products with-sidebar">
         <m-product-listing name="Pfizer Tee" image="./images/pfizer-tee.jpg" price="29.99"></m-product-listing>
         <m-product-listing name="Infinity Tee" image="./images/infinity-tee.png" price="29.99"></m-product-listing>
         <m-product-listing name="Ulterior Motives Tee - Black" image="./images/ulterior-motives-tee-black.png" price="29.99"></m-product-listing>
@@ -37,6 +43,12 @@
         <m-product-listing name="Car Crash Hoodie - Green" image="./images/car-crash-hoodie-green.png" price="59.99"></m-product-listing>
         <m-product-listing name="Medieval Academy Hoodie" image="./images/medieval-academy-hoodie.png" price="59.99"></m-product-listing>
       </div>
+
+      <m-sidebar>
+        <m-mini-update title="On Tour" description="tour was my favorite week. thank you to all the strangers & friends who put their bodies in our..."></m-mini-update>
+        <m-mini-update title="New Music" description="‘Chastain’ is out today. <a href='https://soundcloud.com/molochmoloch/' target='_blank'>https://soundcloud.com/molochmoloch/</a> via..."></m-mini-update>
+        <m-mini-update title="Upcoming Shows" description="1/30 - NYC, 2/1 - Philly, 2/2 - DC, 2/7 - Syracuse, 2/15 - Brooklyn"></m-mini-update>
+      </m-sidebar>
     </section>
     <m-footer></m-footer>
   </div>
