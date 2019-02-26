@@ -14,11 +14,11 @@ class HeaderElement extends HTMLElement {
         </a>
       </div>
       <nav>
-        <a class="link-item" href="./">Home</a>
-        <a class="link-item" href="./music/">Music</a>
-        <a class="link-item" href="./about/">About</a>
-        <a class="link-item" href="./contact/">Contact</a>
-        <a class="link-item" href="./styleguide/">Style Guide</a>
+        <a class="link-item" href="/iat-339-project-two/">Home</a>
+        <a class="link-item" href="/iat-339-project-two/music/">Music</a>
+        <a class="link-item" href="/iat-339-project-two/about/">About</a>
+        <a class="link-item" href="/iat-339-project-two/contact/">Contact</a>
+        <a class="link-item" href="/iat-339-project-two/styleguide/">Style Guide</a>
       </nav>
     </header>
     `
