@@ -189,8 +189,9 @@ code {
     display: block;
     border-radius: 5px;
     color: var(--colour-light);
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     max-width: 50em;
+    overflow-x: scroll;
 }
 
 /*
