@@ -94,6 +94,12 @@ section {
     color: var(--colour-darker);
 }
 
+@media all and (max-width: 767px) {
+  section {
+    padding: 1em;
+  }
+}
+
 section.with-sidebar {
     display: flex;
     flex-wrap: wrap;
@@ -115,6 +121,7 @@ m-sidebar {
 @media all and (max-width: 800px) {
     section div.with-sidebar {
         width: 100%;
+        padding-right: 0;
     }
 
     m-sidebar {
