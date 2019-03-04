@@ -7,15 +7,15 @@
 
 /* CSS Variables */
 :root {
-    --colour-light: #ffffff;
-    --colour-medium: #949494;
-    --colour-dark: #292929;
-    --colour-darker: #1a1a1a;
+  --colour-light: #ffffff;
+  --colour-medium: #949494;
+  --colour-dark: #292929;
+  --colour-darker: #1a1a1a;
 }
 
 /* Base Styles */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,6 +24,12 @@ body {
     background-color: var(--colour-darker);
     color: var(--colour-light);
     overflow-y: overlay;
+}
+
+@media all and (max-width: 767px) {
+  body {
+    padding: 1em;
+  }
 }
 
 .body-style {
