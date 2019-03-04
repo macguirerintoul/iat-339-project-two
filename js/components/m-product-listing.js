@@ -10,7 +10,7 @@ class ProductListing extends HTMLElement {
         this.price = this.getAttribute('price');
         /*html*/
         var template = `
-        <a class="product-listing" href="/iat-339-project-two/product/?p=${this.name}&i=${this.image}">
+        <a class="product-listing" href="/product/?p=${this.name}&i=${this.image}">
             <figure>
                 <img src="${this.image}" alt="${this.name}">
                 <figcaption>${this.name}</figcaption>
