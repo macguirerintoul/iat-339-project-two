@@ -3,7 +3,7 @@ class PaymentForm extends HTMLElement {
     super();
     this.template = `
     <h2>Payment Details</h2>
-    <form action="#">
+    <form action="/confirmation">
       <div class="col-6">
         <h4>Shipping Info</h4>
         <div class="input-wrapper">
