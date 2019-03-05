@@ -27,6 +27,7 @@
   <!-- Import custom elements -->
   <script src="../js/components/m-header.js"></script>
   <script src="../js/components/m-footer.js"></script>
+  <script src="../js/components/m-product-review.js"></script>
   <script src="../js/product-details.js"></script>
 
   <!-- Add custom JavaScript -->
@@ -59,17 +60,9 @@
             <button class="add-to-cart">add to cart</button>
             <div class="user-reviews">
               <h2>Reviews</h2>
-              <div class="review">
-                <h3>Great Stuff</h3>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-                <p>I am now the talk of the town with this incredible shirt.</p>
-              </div>
+              <m-product-review title="Great Stuff" rating="4" review="I am now the talk of the town with this incredible shirt."></m-product-review>
+              <m-product-review title="I Feel attacked" rating="1" review="Stupid shirt, only rated one star cause i couldnt rate 0 star"></m-product-review>
+              <m-product-review title="Great" rating="5" review="Small town Ohio Doctors love me <3"></m-product-review>
             </div>
           </div>
         </div>
