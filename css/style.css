@@ -397,6 +397,20 @@ img {
     padding: 15px;
     border-radius: 10px;
 }
+m-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+m-cart-item .image-container {
+  max-width: 25%;
+}
+
+m-cart-item .title {
+  width: 25%;
+  margin: 0;
+}
 
 .checkout-cart .items {
     border-bottom: 1px solid var(--colour-medium);
