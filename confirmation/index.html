@@ -19,6 +19,7 @@
   <!-- import custom elements -->
   <script src="../js/components/m-header.js"></script>
   <script src="../js/components/m-cart.js"></script>
+  <script src="../js/components/m-cart-item.js"></script>
   <script src="../js/components/m-footer.js"></script>
 </head>
 
@@ -29,10 +30,20 @@
       <div class="text">
         <h2>Order Confirmation</h2>
         <i id="confirm-icon" class="far fa-check-circle"></i>
-        <p>Thank you for your purchase. Your order confirmation number is:</p>
+        <p>Thank you for your purchase. Please keep this confirmation for your records. Your order confirmation number is:</p>
         <h3>MM-4692690</h3>
         <p>For reference, your purchase was as follows:</p>
-        <m-cart></m-cart>
+
+        <div class="cart">
+          <m-cart>
+            <div slot="cart-items">
+              <m-cart-item src="../images/pfizer-tee.jpg" title="Pfizer Tee" quantity="2" price="29.99"></m-cart-item>
+              <m-cart-item src="../images/car-crash-hoodie-black.png" title="Car Crash Hoodie - Black" quantity="1" price="59.99"></m-cart-item>
+              <m-cart-item src="../images/infinity-tee.png" title="Infinity Tee" quantity="1" price="29.99"></m-cart-item>
+            </div>
+          </m-cart>
+        </div>
+
         <a href="/"><button>back to shop</button></a>
       </div>
     </section>
