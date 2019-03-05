@@ -1,9 +1,10 @@
 class PaymentForm extends HTMLElement {
   constructor() {
     super();
+    /* html */
     this.template = `
     <h2>Payment Details</h2>
-    <form action="#">
+    <form class="payment-form" action="/confirmation">
       <div class="col-6">
         <h4>Shipping Info</h4>
         <div class="input-wrapper">
@@ -30,16 +31,9 @@ class PaymentForm extends HTMLElement {
         <div class="input-wrapper">
           <label>Cards Accepted: </label>
           <div class="cards">
-            <input type="radio" name="cardtype" id="visa" aria-label="Visa">
             <i class="fab fa-cc-visa"></i>
-
-            <input type="radio" name="cardtype" id="amex" aria-label="Amex">
             <i class="fab fa-cc-amex"></i>
-
-            <input type="radio" name="cardtype" id="mastercard" aria-label="MasterCard">
             <i class="fab fa-cc-mastercard"></i>
-
-            <input type="radio" name="cardtype" id="discover" aria-label="Discover">
             <i class="fab fa-cc-discover"></i>
           </div>
         </div>
@@ -59,7 +53,9 @@ class PaymentForm extends HTMLElement {
           <label for="cvv">CVV</label><input type="text" id="cvv">
         </div>
       </div>
-      <button>Checkout</button>
+      <div class="col-12">
+        <button>Checkout</button>
+      </div>
     </form>
     `
   }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Style Guide | Moloch Merch</title>
+  <title>Product | Moloch Merch</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -10,18 +10,27 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Add Cormorant Garamond and Open Sans from Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300" rel="stylesheet">
+
+  <!-- Add FontAwesome stylesheet -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-  <link href="../css/layout.css" rel="stylesheet" type="text/css">
-  <link href="../css/style.css" rel="stylesheet" type="text/css">
-  <link href="../css/syntax-highlighting.css" rel="stylesheet" type="text/css">
+  <!-- Add stylesheets -->
+  <link href="/css/layout.css" rel="stylesheet" type="text/css">
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Add webcomponents.js - polyfills for custom elements on unsupported browsers -->
+  <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.7/webcomponents-loader.js"></script>
 
   <!-- Import custom elements -->
   <script src="../js/components/m-header.js"></script>
   <script src="../js/components/m-footer.js"></script>
   <script src="../js/product-details.js"></script>
+
+  <!-- Add custom JavaScript -->
+  <script src="../js/app.js"></script>
 
   <!-- Add syntax highlighting JavaScript library -->
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
@@ -30,10 +39,40 @@
 <body>
   <div class="container">
     <m-header></m-header>
-    <section>
-      <div class="text">
-        <div id="product-name">Product</div>
-        <img id="product-image" alt="An image of the product" />
+    <section id="product-details">
+      <h1 id="product-name">Product</h1>
+      <div class="row">
+        <div class="col-5">
+          <img id="product-image" alt="An image of the product" />
+        </div>
+        <div class="col-7">
+          <div class="info">
+            <h2>Description</h2>
+            <p>
+              Want to display your hatred of big pharma while
+              maintaining your ironic aesthetic? This t-shirt
+              serves both hype beasts and pharmaceutical sales
+              representative so rip that Juul and get that Ohioan
+              doctor to prescribe more Oxycodone!
+            </p>
+            <div id="price"></div>
+            <button class="add-to-cart">add to cart</button>
+            <div class="user-reviews">
+              <h2>Reviews</h2>
+              <div class="review">
+                <h3>Great Stuff</h3>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p>I am now the talk of the town with this incredible shirt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <m-footer></m-footer>

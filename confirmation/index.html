@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Checkout | Moloch Merch</title>
+    <title>Order Confirmatino | Moloch Merch</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,7 +28,6 @@
   <script src="../js/components/m-header.js"></script>
   <script src="../js/components/m-cart.js"></script>
   <script src="../js/components/m-cart-item.js"></script>
-  <script src="../js/components/m-payment-form.js"></script>
   <script src="../js/components/m-footer.js"></script>
 </head>
 
@@ -37,7 +36,11 @@
     <m-header></m-header>
     <section>
       <div class="text">
-        <h1>Checkout</h1>
+        <h1>Order Confirmation</h1>
+        <i id="confirm-icon" class="far fa-check-circle"></i>
+        <p>Thank you for your purchase. Please keep this confirmation for your records. Your order confirmation number is:</p>
+        <h3>MM-4692690</h3>
+        <p>For reference, your purchase was as follows:</p>
 
         <div class="cart">
           <m-cart>
@@ -49,8 +52,7 @@
           </m-cart>
         </div>
 
-
-        <m-payment-form></m-payment-form>
+        <a href="/"><button>back to shop</button></a>
       </div>
     </section>
     <m-footer></m-footer>

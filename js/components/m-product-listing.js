@@ -10,14 +10,14 @@ class ProductListing extends HTMLElement {
         this.price = this.getAttribute('price');
         /*html*/
         var template = `
-        <a class="product-listing" href="/product/?p=${this.name}&i=${this.image}">
-            <figure>
-                <img src="${this.image}" alt="${this.name}">
-                <figcaption>${this.name}</figcaption>
-            </figure>
-            <div class="price">$${this.price}</div>
-            <div class="buy"></div>
+        <a href="/product/?p=${this.name}&i=${this.image}&d=${this.price}">
+          <figure>
+            <img src="${this.image}" alt="${this.name}">
+            <figcaption>${this.name}</figcaption>
+          </figure>
+          <div class="price">$${this.price}</div>
         </a>
+        <button class="add-to-cart">add to cart</button>
         `
         this.innerHTML = template;
     }

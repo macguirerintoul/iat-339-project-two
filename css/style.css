@@ -1,11 +1,36 @@
 /*
-  Moloch Merch Styles
+##     ##  #######  ##        #######   ######  ##     ##
+###   ### ##     ## ##       ##     ## ##    ## ##     ##
+#### #### ##     ## ##       ##     ## ##       ##     ##
+## ### ## ##     ## ##       ##     ## ##       #########
+##     ## ##     ## ##       ##     ## ##       ##     ##
+##     ## ##     ## ##       ##     ## ##    ## ##     ##
+##     ##  #######  ########  #######   ######  ##     ##
 
+
+##     ## ######## ########   ######  ##     ##
+###   ### ##       ##     ## ##    ## ##     ##
+#### #### ##       ##     ## ##       ##     ##
+## ### ## ######   ########  ##       #########
+##     ## ##       ##   ##   ##       ##     ##
+##     ## ##       ##    ##  ##    ## ##     ##
+##     ## ######## ##     ##  ######  ##     ##
+*/
+/*
   References:
   https://www.w3schools.com/howto/howto_css_checkout_form.asp
 */
 
-/* CSS Variables */
+/*
+##     ##    ###    ########  ####    ###    ########  ##       ########  ######
+##     ##   ## ##   ##     ##  ##    ## ##   ##     ## ##       ##       ##    ##
+##     ##  ##   ##  ##     ##  ##   ##   ##  ##     ## ##       ##       ##
+##     ## ##     ## ########   ##  ##     ## ########  ##       ######    ######
+ ##   ##  ######### ##   ##    ##  ######### ##     ## ##       ##             ##
+  ## ##   ##     ## ##    ##   ##  ##     ## ##     ## ##       ##       ##    ##
+   ###    ##     ## ##     ## #### ##     ## ########  ######## ########  ######
+*/
+
 :root {
     --colour-light: #ffffff;
     --colour-medium: #949494;
@@ -13,7 +38,16 @@
     --colour-darker: #1a1a1a;
 }
 
-/* Base Styles */
+/*
+########     ###     ######  ########
+##     ##   ## ##   ##    ## ##
+##     ##  ##   ##  ##       ##
+########  ##     ##  ######  ######
+##     ## #########       ## ##
+##     ## ##     ## ##    ## ##
+########  ##     ##  ######  ########
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -24,6 +58,12 @@ body {
     background-color: var(--colour-darker);
     color: var(--colour-light);
     overflow-y: overlay;
+}
+
+@media all and (max-width: 800px) {
+    body {
+        padding: 1em;
+    }
 }
 
 .body-style {
@@ -40,8 +80,125 @@ body {
     flex-wrap: wrap;
 }
 
-/* Text styles  */
-h1 {
+li {
+    margin-bottom: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+.cards {
+    display: inline-block;
+}
+
+.logo-container {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1em;
+    color: rgb(255, 255, 255);
+    border: var(--colour-light) solid 1px;
+    height: 1em;
+    position: relative;
+}
+
+.logo-container .cart-indicator {
+    font-size: 0.4em;
+    float: right;
+    margin-right: 20px;
+    margin-top: 7px;
+    color: var(--colour-light);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 400px) {
+    .logo-container {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .logo-container {
+        font-size: 65px;
+    }
+
+    .logo-container .cart-indicator {
+        margin-top: 13px;
+    }
+}
+
+.logo-container .logo {
+    text-decoration: none;
+    color: var(--colour-light);
+    width: auto;
+}
+
+.logo-container .logo-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0 70px;
+}
+
+.logo-container .logo > div {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: -0.9em;
+}
+
+@media only screen and (min-width: 500px) {
+    .logo-container .logo-wrapper {
+        margin: 0 100px;
+    }
+}
+
+/* Credit Card Colours */
+.fa-cc-visa, .fa-cc-amex, .fa-cc-discover {
+    color: #afafaf;
+    margin-right: 0.6em;
+}
+
+.fa-cc-mastercard {
+    color: red;
+    margin-right: 0.6em;
+}
+
+form.payment-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 1200px) {
+  form.payment-form div.col-6:nth-of-type(1) {
+    padding-right: 2em;
+  }
+}
+
+footer {
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--colour-light);
+    text-align: center;
+    font-size: 13px;
+    color: var(--colour-medium);
+}
+
+/*
+######## ######## ##     ## ########
+   ##    ##        ##   ##     ##
+   ##    ##         ## ##      ##
+   ##    ######      ###       ##
+   ##    ##         ## ##      ##
+   ##    ##        ##   ##     ##
+   ##    ######## ##     ##    ##
+ */
+
+/* h1 {
     font-size: 24px;
     text-transform: uppercase;
     text-align: center;
@@ -53,17 +210,20 @@ h1::before {
 
 h1::after {
     content: " -";
-}
+} */
 
-h2 {
+h1 {
+    color: var(--colour-darker);
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: solid 1px black;
-    width: max-content;
-    margin: 0 auto;
     text-align: center;
+    display: block;
+    border-bottom: solid 1px black;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 1em auto;
 }
 
 h3 {
@@ -84,84 +244,28 @@ p {
     font-size: 1rem;
 }
 
-/* <section> styles */
-section {
-    margin-bottom: 25px;
-    padding: 2em;
-    background-color: var(--colour-light);
-    border: solid 1px var(--colour-light);
-    border-radius: 5px;
-    color: var(--colour-darker);
-}
-
-section.with-sidebar {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section .text {
-    width: 100%;
-}
-
-section div.with-sidebar {
-    width: 70%;
-    padding-right: 2em;
-}
-
-m-sidebar {
-    width: 30%;
-}
-
-@media all and (max-width: 800px) {
-    section div.with-sidebar {
-        width: 100%;
-    }
-
-    m-sidebar {
-        width: 100%;
-    }
-}
-
-section p {
-    margin: 0 0 1em 0;
-}
-
-section a {
-    word-break: break-all;
-}
-
-body > section {
-    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: var(--colour-darker);
-    font-size: 20px;
-    font-weight: 300;
+.merch-title {
+    color: var(--colour-medium);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 2px;
     text-align: center;
-    display: block;
-    border-bottom: solid 1px black;
-    width: fit-content;
-    width: -moz-fit-content;
-    margin: 1em auto;
+    margin-bottom: 25px;
+    border-bottom: none;
 }
 
-section section {
-    margin-bottom: 0px;
-    background-color: var(--colour-light);
-    border-radius: 0px;
-    padding: 2em;
+.merch-title::before {
+    content: "- ";
 }
 
-li {
-    margin-bottom: 1em;
+.merch-title::after {
+    content: " -";
 }
 
 @media only screen and (min-width: 500px) {
     h1 {
-        font-size: 29px;
+        font-size: 25px;
     }
 
     h2 {
@@ -182,25 +286,104 @@ li {
 }
 
 code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
-    background-color: var(--colour-darker);
-    font-weight: 300;
-    padding: 1rem;
-    display: block;
-    border-radius: 5px;
-    color: var(--colour-light);
-
-    /* word-wrap: break-word; */
-    max-width: 50em;
-    overflow-x: scroll;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  background-color: var(--colour-darker);
+  font-weight: 300;
+  padding: 1rem;
+  display: block;
+  border-radius: 5px;
+  color: var(--colour-light);
+  overflow-x: scroll;
 }
 
 /*
-  INTERACTIVE ELEMENTS -------------------
-*/
+ ######  ########  ######  ######## ####  #######  ##    ##
+##    ## ##       ##    ##    ##     ##  ##     ## ###   ##
+##       ##       ##          ##     ##  ##     ## ####  ##
+ ######  ######   ##          ##     ##  ##     ## ## ## ##
+      ## ##       ##          ##     ##  ##     ## ##  ####
+##    ## ##       ##    ##    ##     ##  ##     ## ##   ###
+ ######  ########  ######     ##    ####  #######  ##    ##
+ */
 
-/* Styling for the navigation button */
+section {
+    margin-bottom: 25px;
+    padding: 2em;
+    background-color: var(--colour-light);
+    border: solid 1px var(--colour-light);
+    border-radius: 5px;
+    color: var(--colour-darker);
+}
+
+@media all and (max-width: 800px) {
+    section {
+        padding: 1em;
+    }
+}
+
+section p {
+    margin: 0 0 1em 0;
+}
+
+section a {
+    word-break: break-all;
+}
+
+body > section {
+    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--colour-darker);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    border-bottom: solid 1px black;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 1em auto;
+}
+
+section section {
+    margin-bottom: 0px;
+    background-color: var(--colour-light);
+    border-radius: 0px;
+    padding: 2em;
+}
+
+/*
+ ######  #### ########  ######## ########     ###    ########
+##    ##  ##  ##     ## ##       ##     ##   ## ##   ##     ##
+##        ##  ##     ## ##       ##     ##  ##   ##  ##     ##
+ ######   ##  ##     ## ######   ########  ##     ## ########
+      ##  ##  ##     ## ##       ##     ## ######### ##   ##
+##    ##  ##  ##     ## ##       ##     ## ##     ## ##    ##
+ ######  #### ########  ######## ########  ##     ## ##     ##
+ */
+
+m-sidebar {
+    width: 30%;
+}
+
+@media all and (max-width: 800px) {
+    m-sidebar {
+        width: 100%;
+    }
+}
+
+/*
+#### ##    ## ######## ######## ########     ###     ######  ######## #### ##     ## ########
+ ##  ###   ##    ##    ##       ##     ##   ## ##   ##    ##    ##     ##  ##     ## ##
+ ##  ####  ##    ##    ##       ##     ##  ##   ##  ##          ##     ##  ##     ## ##
+ ##  ## ## ##    ##    ######   ########  ##     ## ##          ##     ##  ##     ## ######
+ ##  ##  ####    ##    ##       ##   ##   ######### ##          ##     ##   ##   ##  ##
+ ##  ##   ###    ##    ##       ##    ##  ##     ## ##    ##    ##     ##    ## ##   ##
+#### ##    ##    ##    ######## ##     ## ##     ##  ######     ##    ####    ###    ########
+ */
 
 nav {
     padding: 1em 0;
@@ -227,8 +410,6 @@ a.link-item:hover, a.link-item:focus {
     padding-bottom: 0.25em;
 }
 
-/* Button */
-
 .button, button {
     font-size: 11px;
     text-transform: uppercase;
@@ -242,7 +423,7 @@ a.link-item:hover, a.link-item:focus {
     font-weight: 600;
 }
 
-.button:hover, button:hover {
+.button:hover, button:hover, .button:focus, button:focus {
     background-color: var(--colour-darker);
     color: var(--colour-light);
 }
@@ -250,10 +431,6 @@ a.link-item:hover, a.link-item:focus {
 .button:active, .button:focus, button:active, button:focus {
     outline: none;
 }
-
-/*
-  TEXT ELEMENTS -------------------
-*/
 
 a.link {
     color: #505050;
@@ -266,23 +443,31 @@ a.link:hover, a.link:focus {
     padding-bottom: 5px;
 }
 
-/*
-  COMBINED ELEMENTS -------------------
-*/
-
-a img {
+a img.hover {
     transition: all 300ms;
     margin-top: 15px;
     width: 100%;
     max-width: 700px;
 }
 
-a img:hover {
+a img.hover:hover {
     transform: translateY(-15px);
     box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* Input Classes */
+.added {
+  background-color: lightgreen;
+}
+
+/*
+#### ##    ## ########  ##     ## ########
+ ##  ###   ## ##     ## ##     ##    ##
+ ##  ####  ## ##     ## ##     ##    ##
+ ##  ## ## ## ########  ##     ##    ##
+ ##  ##  #### ##        ##     ##    ##
+ ##  ##   ### ##        ##     ##    ##
+#### ##    ## ##         #######     ##
+ */
 
 .input-wrapper {
     border: lightgrey solid 1px;
@@ -310,6 +495,7 @@ input {
     font-size: 15px;
     flex-grow: 1;
     padding-left: 1em;
+    min-width: 10px;
 }
 
 input:focus {
@@ -327,40 +513,52 @@ input[type=radio] {
 }
 
 m-product-listing {
-    width: 33.33333%;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
+    padding: 0 1em 1em 1em;
     box-sizing: border-box;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    text-align: center;
 }
 
-@media all and (max-width: 1200px) {
-    m-product-listing {
-        width: 50%;
-    }
-}
+/*
+########  ########   #######  ########  ##     ##  ######  ########
+##     ## ##     ## ##     ## ##     ## ##     ## ##    ##    ##
+##     ## ##     ## ##     ## ##     ## ##     ## ##          ##
+########  ########  ##     ## ##     ## ##     ## ##          ##
+##        ##   ##   ##     ## ##     ## ##     ## ##          ##
+##        ##    ##  ##     ## ##     ## ##     ## ##    ##    ##
+##        ##     ##  #######  ########   #######   ######     ##
+ */
 
-@media all and (max-width: 500px) {
-    m-product-listing {
-        width: 100%;
-    }
-}
-
-img {
-    width: 100%;
-}
-
-.product-listing {
+m-product-listing {
     text-decoration: none;
     color: black;
+    padding-top: 1em;
+
+    /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.062); */
+    display: block;
+    border-radius: 10px;
+    height: 100%;
+    transition: all 300ms;
 }
 
-.product-listing img {
+m-product-listing button {
+    margin-top: 1em;
+}
+
+m-product-listing:hover, m-product-listing:focus {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+m-product-listing img {
     width: 100%;
 }
 
-.product-listing figcaption {
+m-product-listing a {
+    color: var(--colour-dark);
+    text-decoration: none;
+}
+
+m-product-listing figcaption {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -368,38 +566,81 @@ img {
     margin-top: 5px;
 }
 
-.product-listing figure {
-    margin-bottom: 5px;
+m-product-listing figure {
+  margin: 1em;
+  margin-bottom: 5px;
 }
 
-.product-listing .price {
+m-product-listing .price {
     text-align: center;
     color: var(--colour-dark);
     font-weight: 600;
     font-size: 20px;
 }
 
-.checkout-cart {
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+.description {
+    padding-left: 2em;
+}
+
+/*
+ ######     ###    ########  ########
+##    ##   ## ##   ##     ##    ##
+##        ##   ##  ##     ##    ##
+##       ##     ## ########     ##
+##       ######### ##   ##      ##
+##    ## ##     ## ##    ##     ##
+ ######  ##     ## ##     ##    ##
+ */
+
+.cart {
     padding: 15px;
     border-radius: 10px;
 }
 
-.checkout-cart .items {
-    border-bottom: 1px solid var(--colour-medium);
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+@media all and (max-width: 800px) {
+  .cart .quantity,
+  .cart .price {
+    font-size: 0.8rem;
+  }
 }
 
-.checkout-cart h2, .checkout-cart .info {
-    display: inline-block;
+m-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--colour-medium);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+m-cart-item .image-container {
+    max-width: 25%;
+}
+
+@media all and (min-width: 1200px) {
+  m-cart-item .image-container {
+    max-width: 10%;
+  }
+}
+
+m-cart-item .title {
+    width: 25%;
+    margin: 0;
 }
 
 #checkout {
     margin-top: 15px;
 }
 
-/* Colors */
+/*
+ ######   #######  ##        #######  ##     ## ########
+##    ## ##     ## ##       ##     ## ##     ## ##     ##
+##       ##     ## ##       ##     ## ##     ## ##     ##
+##       ##     ## ##       ##     ## ##     ## ########
+##       ##     ## ##       ##     ## ##     ## ##   ##
+##    ## ##     ## ##       ##     ## ##     ## ##    ##
+ ######   #######  ########  #######   #######  ##     ##
+ */
 
 .colour-wrapper {
     margin-top: 3em;
@@ -437,64 +678,14 @@ img {
 }
 
 /*
-  CUSTOM PAGE ELEMENTS -------------------
-*/
-
-.cards {
-    display: inline-block;
-}
-
-.logo-container {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 1em;
-    color: rgb(255, 255, 255);
-    border: var(--colour-light) solid 1px;
-    height: 1em;
-    position: relative;
-}
-
-.logo-container .cart {
-    font-size: 0.4em;
-    float: right;
-    margin-right: 20px;
-    margin-top: 13px;
-    color: var(--colour-light);
-    cursor: pointer;
-    text-decoration: none;
-}
-
-@media only screen and (min-width: 500px) {
-    .logo-container {
-        font-size: 65px;
-    }
-}
-
-.logo-container .logo {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.logo-container .logo > div {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: -0.9em;
-}
-
-.title {
-    color: var(--colour-medium);
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 25px;
-}
+ ######   ##     ## #### ########  ########
+##    ##  ##     ##  ##  ##     ## ##
+##        ##     ##  ##  ##     ## ##
+##   #### ##     ##  ##  ##     ## ######
+##    ##  ##     ##  ##  ##     ## ##
+##    ##  ##     ##  ##  ##     ## ##
+ ######    #######  #### ########  ########
+ */
 
 .type-demo {
     font-size: 20px;
@@ -505,6 +696,17 @@ img {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     word-wrap: break-word;
+}
+
+@media only screen and (min-width: 800px) {
+    .type-demo {
+        font-size: 30px;
+    }
+
+    .type-demo.logo {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 35px;
+    }
 }
 
 .type-demo.light {
@@ -519,42 +721,87 @@ img {
     word-wrap: break-word;
 }
 
-/* Credit Card Colours */
-.fa-cc-visa {
-    color: navy;
-}
-
-.fa-cc-amex {
-    color: blue;
-}
-
-.fa-cc-mastercard {
-    color: red;
-}
-
-.fa-cc-discover {
-    color: orange;
-}
-
 @media only screen and (min-width: 500px) {
     .title {
         font-size: 20px;
     }
 }
 
-@media only screen and (min-width: 800px) {
-    .type-demo {
-        font-size: 30px;
-    }
+.grid-demo {
+    font-size: 12px;
+}
 
-    .type-demo.logo {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 35px;
+.grid-demo > .row > div {
+    height: 3em;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+.grid-demo .column {
+    background-color: var(--colour-dark);
+    color: var(--colour-light);
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    text-align: center;
+    height: 3em;
+    line-height: 3em;
+}
+
+/*
+##     ## ##     ##  ######  ####  ######
+###   ### ##     ## ##    ##  ##  ##    ##
+#### #### ##     ## ##        ##  ##
+## ### ## ##     ##  ######   ##  ##
+##     ## ##     ##       ##  ##  ##
+##     ## ##     ## ##    ##  ##  ##    ##
+##     ##  #######   ######  ####  ######
+ */
+
+#product-details #price {
+    margin-bottom: 1em;
+}
+
+#product-details .info {
+    padding: 0;
+    padding-top: 1em;
+}
+
+@media only screen and (min-width: 1200px) {
+    #product-details .info {
+        padding-left: 2em;
+        padding-right: 1em;
+        padding-top: 0;
     }
 }
 
-/* Grid Layout */
-.grid-demo > div{
-    background-color: var(--colour-medium);
-    height: 2em;
+.description {
+    padding-left: 2em;
+}
+
+.music-posts iframe {
+    padding: 2em;
+}
+
+/*
+ ######   #######  ##    ## ######## #### ########  ##     ##
+##    ## ##     ## ###   ## ##        ##  ##     ## ###   ###
+##       ##     ## ####  ## ##        ##  ##     ## #### ####
+##       ##     ## ## ## ## ######    ##  ########  ## ### ##
+##       ##     ## ##  #### ##        ##  ##   ##   ##     ##
+##    ## ##     ## ##   ### ##        ##  ##    ##  ##     ##
+ ######   #######  ##    ## ##       #### ##     ## ##     ##
+ */
+
+#confirm-icon {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* User Reviews */
+.user-reviews h3 {
+    margin-block-end: 0.25em;
 }
