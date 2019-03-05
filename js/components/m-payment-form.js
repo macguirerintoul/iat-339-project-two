@@ -53,7 +53,9 @@ class PaymentForm extends HTMLElement {
           <label for="cvv">CVV</label><input type="text" id="cvv">
         </div>
       </div>
-      <button>Checkout</button>
+      <div class="col-12">
+        <button>Checkout</button>
+      </div>
     </form>
     `
   }
