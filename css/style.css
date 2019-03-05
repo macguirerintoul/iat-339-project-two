@@ -168,6 +168,11 @@ img {
     margin-right: 0.6em;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 footer {
     padding: 1em;
     border-radius: 5px;
