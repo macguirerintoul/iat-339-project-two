@@ -106,10 +106,6 @@ section {
   }
 }
 
-section .text {
-    width: 100%;
-}
-
 m-sidebar {
     width: 30%;
 }

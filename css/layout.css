@@ -38,6 +38,10 @@ section div.with-sidebar {
     padding-right: 0;
 }
 
+section .text {
+    width: 100%;
+}
+
 /* Small (Phablet) */
 @media only screen and (min-width: 500px) {
     .container {
