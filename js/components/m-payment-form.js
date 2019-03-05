@@ -4,7 +4,7 @@ class PaymentForm extends HTMLElement {
     /* html */
     this.template = `
     <h2>Payment Details</h2>
-    <form action="/confirmation">
+    <form class="payment-form" action="/confirmation">
       <div class="col-6">
         <h4>Shipping Info</h4>
         <div class="input-wrapper">

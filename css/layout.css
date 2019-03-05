@@ -187,10 +187,6 @@ section .text {
         width: 50%;
     }
 
-    form .col-6 {
-      padding-right: 2em;
-    }
-
     .col-7 {
         width: 58.333%;
     }
