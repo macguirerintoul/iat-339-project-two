@@ -11,7 +11,7 @@ class HeaderElement extends HTMLElement {
             <div>Moloch</div>
           </a>
         </div>
-        <a class="cart" href="/checkout/">
+        <a class="cart-indicator" href="/checkout/">
           <i class="fas fa-shopping-cart"></i> 3
         </a>
       </div>

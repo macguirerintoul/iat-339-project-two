@@ -383,7 +383,7 @@ img {
 @media all and (max-width: 767px) {
   .cart {
     box-shadow: none;
-    /* padding: 0; */
+    padding: 15px;
   }
 
   .cart .quantity,
@@ -462,7 +462,7 @@ m-cart-item .title {
 
 .logo-container {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 1em;
     color: rgb(255, 255, 255);
     border: var(--colour-light) solid 1px;
@@ -470,19 +470,28 @@ m-cart-item .title {
     position: relative;
 }
 
-.logo-container .cart {
+.logo-container .cart-indicator {
     font-size: 0.4em;
     float: right;
     margin-right: 20px;
-    /* margin-top: 13px; */
+    margin-top: 7px;
     color: var(--colour-light);
     cursor: pointer;
     text-decoration: none;
 }
 
+@media only screen and (min-width: 400px) {
+    .logo-container {
+        font-size: 40px;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     .logo-container {
         font-size: 65px;
+    }
+    .logo-container .cart-indicator{
+        margin-top: 13px;
     }
 }
 
@@ -507,6 +516,12 @@ m-cart-item .title {
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: -0.9em;
+}
+
+@media only screen and (min-width: 500px) {
+    .logo-container .logo-wrapper {
+        margin: 0 100px;
+    }
 }
 
 .title {
