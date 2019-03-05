@@ -241,7 +241,7 @@ a.link-item:hover, a.link-item:focus {
     font-weight: 600;
 }
 
-.button:hover, button:hover {
+.button:hover, button:hover, .button:focus, button:focus {
     background-color: var(--colour-darker);
     color: var(--colour-light);
 }
