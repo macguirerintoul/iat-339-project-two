@@ -305,6 +305,7 @@ input {
     font-size: 15px;
     flex-grow: 1;
     padding-left: 1em;
+    min-width: 10px;
 }
 
 input:focus {
