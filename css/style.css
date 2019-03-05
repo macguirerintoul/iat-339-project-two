@@ -286,18 +286,15 @@ p {
 }
 
 code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
-    background-color: var(--colour-darker);
-    font-weight: 300;
-    padding: 1rem;
-    display: block;
-    border-radius: 5px;
-    color: var(--colour-light);
-
-    /* word-wrap: break-word; */
-    max-width: 50em;
-    overflow-x: scroll;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  background-color: var(--colour-darker);
+  font-weight: 300;
+  padding: 1rem;
+  display: block;
+  border-radius: 5px;
+  color: var(--colour-light);
+  overflow-x: scroll;
 }
 
 /*

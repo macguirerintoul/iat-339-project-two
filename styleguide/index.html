@@ -191,13 +191,17 @@
       <h3>Image as a Link</h3>
 
       <h4>CSS selector:</h4>
-      <p>N/A</p>
+      <p><code>a img</code></p>
 
       <h4>Sample code:</h4>
-      <code class="prettyprint lang-html">&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/shirt.jpg&quot; alt=&quot;T Shirt&quot;&gt;&lt;/a&gt;</code>
+      <pre class="prettyprint lang-html">
+        <code>&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/shirt.jpg&quot; alt=&quot;T Shirt&quot;&gt;&lt;/a&gt;</code>
+      </pre>
 
       <h4>Rendered element:</h4>
-      <a href="#"><img src="../images/pfizer-tee.jpg" alt="T Shirt"></a>
+      <div class="col-4 col-sm-12">
+        <a href="#"><img src="../images/pfizer-tee.jpg" alt="T Shirt"></a>
+      </div>
     </section>
 
 
@@ -214,7 +218,7 @@
       <h3>Headings</h3>
 
       <h4>CSS selector:</h4>
-      <p>N/A</p>
+      <p><code>h1, h2, h3, h4, h5, h6</code></p>
 
       <h4>Sample code:</h4>
       <pre class="prettyprint lang-html">
@@ -254,7 +258,7 @@
       <p><code>ol, ol li</code></p>
 
       <h4>Sample code:</h4>
-      <pre class="prettyprint lang-html"> <code>&lt;ol&gt;
+      <pre class="prettyprint lang-html"><code>&lt;ol&gt;
   &lt;li&gt;Thing&lt;/li&gt;
   &lt;li&gt;Thing&lt;/li&gt;
   &lt;li&gt;Thing&lt;/li&gt;
@@ -307,7 +311,7 @@
       <h3>Product Listing</h3>
 
       <h4>CSS selector:</h4>
-      <p>m-product-listing</p>
+      <p><code>m-product-listing</code></p>
 
       <h4>Sample code:</h4>
       <pre class="prettyprint lang-html"><code id="product-listing-sample-code"></code></pre>
@@ -321,14 +325,17 @@
       </script>
 
       <h4>Rendered element:</h4>
-      <m-product-listing name="Pfizer Tee" price="29.99" image="../images/pfizer-tee.jpg"></m-product-listing>
+      <div class="col-4 col-sm-12">
+        <m-product-listing name="Pfizer Tee" price="29.99" image="../images/pfizer-tee.jpg"></m-product-listing>
+      </div>
+
     </section>
 
     <section id="checkout">
       <h3>Payment Form</h3>
 
       <h4>CSS selector:</h4>
-      <p>m-payment-form</p>
+      <p><code>m-payment-form</code></p>
 
       <h4>Sample code:</h4>
       <pre class="prettyprint lang-html">
@@ -353,9 +360,8 @@
       <p><code>m-cart</code></p>
 
       <h4>Sample code:</h4>
-      <pre>
-        <code id="cart-sample-code">
-&lt;div class=&quot;cart&quot;&gt;
+      <pre class="prettyprint lang-html">
+        <code id="cart-sample-code">&lt;div class=&quot;cart&quot;&gt;
   &lt;m-cart&gt;
     &lt;div slot=&quot;cart-items&quot;&gt;
       &lt;m-cart-item src=&quot;../images/pfizer-tee.jpg&quot; title=&quot;Pfizer Tee&quot; quantity=&quot;2&quot; price=&quot;29.99&quot;&gt;&lt;/m-cart-item&gt;
@@ -363,8 +369,7 @@
       &lt;m-cart-item src=&quot;../images/infinity-tee.png&quot; title=&quot;Infinity Tee&quot; quantity=&quot;1&quot; price=&quot;29.99&quot;&gt;&lt;/m-cart-item&gt;
     &lt;/div&gt;
   &lt;/m-cart&gt;
-&lt;/div&gt;
-        </code>
+&lt;/div&gt;</code>
       </pre>
 
 
