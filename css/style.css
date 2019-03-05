@@ -7,15 +7,15 @@
 
 /* CSS Variables */
 :root {
-    --colour-light: #ffffff;
-    --colour-medium: #949494;
-    --colour-dark: #292929;
-    --colour-darker: #1a1a1a;
+  --colour-light: #ffffff;
+  --colour-medium: #949494;
+  --colour-dark: #292929;
+  --colour-darker: #1a1a1a;
 }
 
 /* Base Styles */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,6 +24,12 @@ body {
     background-color: var(--colour-darker);
     color: var(--colour-light);
     overflow-y: overlay;
+}
+
+@media all and (max-width: 767px) {
+  body {
+    padding: 1em;
+  }
 }
 
 .body-style {
@@ -94,18 +100,14 @@ section {
     color: var(--colour-darker);
 }
 
-section.with-sidebar {
-    display: flex;
-    flex-wrap: wrap;
+@media all and (max-width: 767px) {
+  section {
+    padding: 1em;
+  }
 }
 
 section .text {
     width: 100%;
-}
-
-section div.with-sidebar {
-    width: 70%;
-    padding-right: 2em;
 }
 
 m-sidebar {
@@ -113,9 +115,6 @@ m-sidebar {
 }
 
 @media all and (max-width: 800px) {
-    section div.with-sidebar {
-        width: 100%;
-    }
 
     m-sidebar {
         width: 100%;
@@ -327,24 +326,11 @@ input[type=radio] {
 }
 
 m-product-listing {
-    width: 33.33333%;
     margin-bottom: 1em;
     padding-bottom: 1em;
     box-sizing: border-box;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-}
-
-@media all and (max-width: 1200px) {
-    m-product-listing {
-        width: 50%;
-    }
-}
-
-@media all and (max-width: 500px) {
-    m-product-listing {
-        width: 100%;
-    }
 }
 
 img {
@@ -554,7 +540,25 @@ img {
 }
 
 /* Grid Layout */
-.grid-demo > div{
-    background-color: var(--colour-medium);
+.grid-demo > .row > div{
     height: 2em;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+
+.grid-demo .column {
+    background-color: var(--colour-medium);
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+
+footer {
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--colour-light);
+    text-align: center;
+    font-size: 13px;
+    color: var(--colour-medium);
 }

@@ -4,10 +4,7 @@ class FooterElement extends HTMLElement {
     var template = ` 
       <footer>
         <div>
-          <h4>Contact Us</h4>
-          <ul>
-            <li>merch@moloch.com</li>
-          </ul>
+            © 2019 | Developed by Macguire + Josh
         </div>
       </footer>
     `
