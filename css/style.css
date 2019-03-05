@@ -5,6 +5,16 @@
   https://www.w3schools.com/howto/howto_css_checkout_form.asp
 */
 
+
+##     ##    ###    ########  ####    ###    ########  ##       ########  ######
+##     ##   ## ##   ##     ##  ##    ## ##   ##     ## ##       ##       ##    ##
+##     ##  ##   ##  ##     ##  ##   ##   ##  ##     ## ##       ##       ##
+##     ## ##     ## ########   ##  ##     ## ########  ##       ######    ######
+ ##   ##  ######### ##   ##    ##  ######### ##     ## ##       ##             ##
+  ## ##   ##     ## ##    ##   ##  ##     ## ##     ## ##       ##       ##    ##
+   ###    ##     ## ##     ## #### ##     ## ########  ######## ########  ######
+
+
 /* CSS Variables */
 :root {
   --colour-light: #ffffff;
@@ -46,7 +56,15 @@ body {
     flex-wrap: wrap;
 }
 
-/* Text styles  */
+
+######## ######## ##     ## ########
+   ##    ##        ##   ##     ##
+   ##    ##         ## ##      ##
+   ##    ######      ###       ##
+   ##    ##         ## ##      ##
+   ##    ##        ##   ##     ##
+   ##    ######## ##     ##    ##
+
 h1 {
     font-size: 24px;
     text-transform: uppercase;
@@ -90,7 +108,55 @@ p {
     font-size: 1rem;
 }
 
-/* <section> styles */
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  background-color: var(--colour-darker);
+  font-weight: 300;
+  padding: 1rem;
+  display: block;
+  border-radius: 5px;
+  color: var(--colour-light);
+  max-width: 50em;
+  overflow-x: scroll;
+}
+
+@media only screen and (min-width: 500px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        /* margin-top: 6rem; */
+    }
+
+    h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 1rem;
+        letter-spacing: 1px;
+    }
+
+    h4 {
+        margin-bottom: 0.25rem;
+    }
+}
+
+ ######  ########  ######  ######## ####  #######  ##    ##
+##    ## ##       ##    ##    ##     ##  ##     ## ###   ##
+##       ##       ##          ##     ##  ##     ## ####  ##
+ ######  ######   ##          ##     ##  ##     ## ## ## ##
+      ## ##       ##          ##     ##  ##     ## ##  ####
+##    ## ##       ##    ##    ##     ##  ##     ## ##   ###
+ ######  ########  ######     ##    ####  #######  ##    ##
+
 section {
     margin-bottom: 25px;
     padding: 2em;
@@ -172,48 +238,14 @@ li {
     margin-bottom: 1em;
 }
 
-@media only screen and (min-width: 500px) {
-    h1 {
-        font-size: 29px;
-    }
 
-    h2 {
-        /* margin-top: 6rem; */
-    }
-
-    h3 {
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 20px;
-        margin-top: 1rem;
-        letter-spacing: 1px;
-    }
-
-    h4 {
-        margin-bottom: 0.25rem;
-    }
-}
-
-code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
-    background-color: var(--colour-darker);
-    font-weight: 300;
-    padding: 1rem;
-    display: block;
-    border-radius: 5px;
-    color: var(--colour-light);
-
-    /* word-wrap: break-word; */
-    max-width: 50em;
-    overflow-x: scroll;
-}
-
-/*
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the navigation button */
+#### ##    ## ######## ######## ########     ###     ######  ######## #### ##     ## ########
+ ##  ###   ##    ##    ##       ##     ##   ## ##   ##    ##    ##     ##  ##     ## ##
+ ##  ####  ##    ##    ##       ##     ##  ##   ##  ##          ##     ##  ##     ## ##
+ ##  ## ## ##    ##    ######   ########  ##     ## ##          ##     ##  ##     ## ######
+ ##  ##  ####    ##    ##       ##   ##   ######### ##          ##     ##   ##   ##  ##
+ ##  ##   ###    ##    ##       ##    ##  ##     ## ##    ##    ##     ##    ## ##   ##
+#### ##    ##    ##    ######## ##     ## ##     ##  ######     ##    ####    ###    ########
 
 nav {
     padding: 1em 0;
@@ -240,8 +272,6 @@ a.link-item:hover, a.link-item:focus {
     padding-bottom: 0.25em;
 }
 
-/* Button */
-
 .button, button {
     font-size: 11px;
     text-transform: uppercase;
@@ -264,10 +294,6 @@ a.link-item:hover, a.link-item:focus {
     outline: none;
 }
 
-/*
-  TEXT ELEMENTS -------------------
-*/
-
 a.link {
     color: #505050;
     text-decoration: none;
@@ -278,10 +304,6 @@ a.link {
 a.link:hover, a.link:focus {
     padding-bottom: 5px;
 }
-
-/*
-  COMBINED ELEMENTS -------------------
-*/
 
 a img {
     transition: all 300ms;
@@ -295,7 +317,13 @@ a img:hover {
     box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* Input Classes */
+#### ##    ## ########  ##     ## ########
+ ##  ###   ## ##     ## ##     ##    ##
+ ##  ####  ## ##     ## ##     ##    ##
+ ##  ## ## ## ########  ##     ##    ##
+ ##  ##  #### ##        ##     ##    ##
+ ##  ##   ### ##        ##     ##    ##
+#### ##    ## ##         #######     ##
 
 .input-wrapper {
     border: lightgrey solid 1px;
@@ -339,34 +367,38 @@ input[type=radio] {
     flex-grow: 0;
 }
 
+########  ########   #######  ########  ##     ##  ######  ########
+##     ## ##     ## ##     ## ##     ## ##     ## ##    ##    ##
+##     ## ##     ## ##     ## ##     ## ##     ## ##          ##
+########  ########  ##     ## ##     ## ##     ## ##          ##
+##        ##   ##   ##     ## ##     ## ##     ## ##          ##
+##        ##    ##  ##     ## ##     ## ##     ## ##    ##    ##
+##        ##     ##  #######  ########   #######   ######     ##
+
 m-product-listing {
-    width: 33.33333%;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+  width: 33.33333%;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 @media all and (max-width: 1200px) {
-    m-product-listing {
-        width: 50%;
-    }
+  m-product-listing {
+    width: 50%;
+  }
 }
 
 @media all and (max-width: 500px) {
-    m-product-listing {
-        width: 100%;
-    }
-}
-
-img {
+  m-product-listing {
     width: 100%;
+  }
 }
 
 .product-listing {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .product-listing img {
@@ -392,6 +424,14 @@ img {
     font-size: 20px;
 }
 
+ ######     ###    ########  ########
+##    ##   ## ##   ##     ##    ##
+##        ##   ##  ##     ##    ##
+##       ##     ## ########     ##
+##       ######### ##   ##      ##
+##    ## ##     ## ##    ##     ##
+ ######  ##     ## ##     ##    ##
+
 .cart {
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -409,6 +449,18 @@ img {
     font-size: 0.8rem;
   }
 }
+
+m-cart .total {
+  text-align: right;
+}
+
+ ######     ###    ########  ########    #### ######## ######## ##     ##
+##    ##   ## ##   ##     ##    ##        ##     ##    ##       ###   ###
+##        ##   ##  ##     ##    ##        ##     ##    ##       #### ####
+##       ##     ## ########     ##        ##     ##    ######   ## ### ##
+##       ######### ##   ##      ##        ##     ##    ##       ##     ##
+##    ## ##     ## ##    ##     ##        ##     ##    ##       ##     ##
+ ######  ##     ## ##     ##    ##       ####    ##    ######## ##     ##
 
 m-cart-item {
   display: flex;
@@ -429,11 +481,13 @@ m-cart-item .title {
   font-size: 0.8rem;
 }
 
-#checkout {
-    margin-top: 15px;
-}
-
-/* Colors */
+ ######   #######  ##        #######  ##     ## ########
+##    ## ##     ## ##       ##     ## ##     ## ##     ##
+##       ##     ## ##       ##     ## ##     ## ##     ##
+##       ##     ## ##       ##     ## ##     ## ########
+##       ##     ## ##       ##     ## ##     ## ##   ##
+##    ## ##     ## ##       ##     ## ##     ## ##    ##
+ ######   #######  ########  #######   #######  ##     ##
 
 .colour-wrapper {
     margin-top: 3em;
@@ -553,7 +607,14 @@ m-cart-item .title {
     word-wrap: break-word;
 }
 
-/* Credit Card Colours */
+ ######  ########  ######## ########  #### ########
+##    ## ##     ## ##       ##     ##  ##     ##
+##       ##     ## ##       ##     ##  ##     ##
+##       ########  ######   ##     ##  ##     ##
+##       ##   ##   ##       ##     ##  ##     ##
+##    ## ##    ##  ##       ##     ##  ##     ##
+ ######  ##     ## ######## ########  ####    ##
+
 .fa-cc-visa {
     color: navy;
 }
@@ -570,25 +631,35 @@ m-cart-item .title {
     color: orange;
 }
 
-@media only screen and (min-width: 500px) {
-    .title {
-        font-size: 20px;
-    }
-}
 
-@media only screen and (min-width: 800px) {
-    .type-demo {
-        font-size: 30px;
-    }
 
-    .type-demo.logo {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 35px;
-    }
-}
 
-/* Grid Layout */
+ ######   ##     ## #### ########  ########
+##    ##  ##     ##  ##  ##     ## ##
+##        ##     ##  ##  ##     ## ##
+##   #### ##     ##  ##  ##     ## ######
+##    ##  ##     ##  ##  ##     ## ##
+##    ##  ##     ##  ##  ##     ## ##
+ ######    #######  #### ########  ########
+
+
+/*
+  This section contains styles for demonstration purposes
+  on the style guide.
+*/
+
 .grid-demo > div{
     background-color: var(--colour-medium);
     height: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .type-demo {
+    font-size: 30px;
+  }
+
+  .type-demo.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+  }
 }
