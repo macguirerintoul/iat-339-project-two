@@ -1,11 +1,36 @@
-/*
-  Moloch Merch Styles
 
+##     ##  #######  ##        #######   ######  ##     ##
+###   ### ##     ## ##       ##     ## ##    ## ##     ##
+#### #### ##     ## ##       ##     ## ##       ##     ##
+## ### ## ##     ## ##       ##     ## ##       #########
+##     ## ##     ## ##       ##     ## ##       ##     ##
+##     ## ##     ## ##       ##     ## ##    ## ##     ##
+##     ##  #######  ########  #######   ######  ##     ##
+
+
+##     ## ######## ########   ######  ##     ##
+###   ### ##       ##     ## ##    ## ##     ##
+#### #### ##       ##     ## ##       ##     ##
+## ### ## ######   ########  ##       #########
+##     ## ##       ##   ##   ##       ##     ##
+##     ## ##       ##    ##  ##    ## ##     ##
+##     ## ######## ##     ##  ######  ##     ##
+
+/*
   References:
   https://www.w3schools.com/howto/howto_css_checkout_form.asp
 */
 
-/* CSS Variables */
+
+##     ##    ###    ########  ####    ###    ########  ##       ########  ######
+##     ##   ## ##   ##     ##  ##    ## ##   ##     ## ##       ##       ##    ##
+##     ##  ##   ##  ##     ##  ##   ##   ##  ##     ## ##       ##       ##
+##     ## ##     ## ########   ##  ##     ## ########  ##       ######    ######
+ ##   ##  ######### ##   ##    ##  ######### ##     ## ##       ##             ##
+  ## ##   ##     ## ##    ##   ##  ##     ## ##     ## ##       ##       ##    ##
+   ###    ##     ## ##     ## #### ##     ## ########  ######## ########  ######
+
+
 :root {
   --colour-light: #ffffff;
   --colour-medium: #949494;
@@ -13,7 +38,16 @@
   --colour-darker: #1a1a1a;
 }
 
-/* Base Styles */
+
+########     ###     ######  ########
+##     ##   ## ##   ##    ## ##
+##     ##  ##   ##  ##       ##
+########  ##     ##  ######  ######
+##     ## #########       ## ##
+##     ## ##     ## ##    ## ##
+########  ##     ##  ######  ########
+
+
 * {
   box-sizing: border-box;
 }
@@ -46,421 +80,13 @@ body {
     flex-wrap: wrap;
 }
 
-/* Text styles  */
-h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h1::before {
-    content: "- ";
-}
-
-h1::after {
-    content: " -";
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: solid 1px black;
-    width: max-content;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h3 {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-top: 1rem;
-    letter-spacing: 1px;
-}
-
-h4 {
-    margin-bottom: 0.25rem;
-}
-
-p {
-    margin-top: 0;
-    max-width: 50em;
-    font-size: 1rem;
-}
-
-/* <section> styles */
-section {
-    margin-bottom: 25px;
-    padding: 2em;
-    background-color: var(--colour-light);
-    border: solid 1px var(--colour-light);
-    border-radius: 5px;
-    color: var(--colour-darker);
-}
-
-@media all and (max-width: 767px) {
-  section {
-    padding: 1em;
-  }
-}
-
-m-sidebar {
-    width: 30%;
-}
-
-@media all and (max-width: 800px) {
-
-    m-sidebar {
-        width: 100%;
-    }
-}
-
-section p {
-    margin: 0 0 1em 0;
-}
-
-section a {
-    word-break: break-all;
-}
-
-body > section {
-    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: var(--colour-darker);
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    display: block;
-    border-bottom: solid 1px black;
-    width: fit-content;
-    width: -moz-fit-content;
-    margin: 1em auto;
-}
-
-section section {
-    margin-bottom: 0px;
-    background-color: var(--colour-light);
-    border-radius: 0px;
-    padding: 2em;
-}
-
 li {
     margin-bottom: 1em;
-}
-
-@media only screen and (min-width: 500px) {
-    h1 {
-        font-size: 29px;
-    }
-
-    h2 {
-        /* margin-top: 6rem; */
-    }
-
-    h3 {
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 20px;
-        margin-top: 1rem;
-        letter-spacing: 1px;
-    }
-
-    h4 {
-        margin-bottom: 0.25rem;
-    }
-}
-
-code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
-    background-color: var(--colour-darker);
-    font-weight: 300;
-    padding: 1rem;
-    display: block;
-    border-radius: 5px;
-    color: var(--colour-light);
-
-    /* word-wrap: break-word; */
-    max-width: 50em;
-    overflow-x: scroll;
-}
-
-/*
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the navigation button */
-
-nav {
-    padding: 1em 0;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid var(--colour-light);
-    margin-bottom: 30px;
-}
-
-a.link-item {
-    margin: 0 10px 0px 10px;
-    color: var(--colour-light);
-    padding: 1em 0;
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 200ms linear;
-    white-space: nowrap;
-}
-
-a.link-item:hover, a.link-item:focus {
-    border-bottom: 1px var(--colour-light) solid;
-    padding-bottom: 0.25em;
-}
-
-/* Button */
-
-.button, button {
-    font-size: 11px;
-    text-transform: uppercase;
-    background-color: unset;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--colour-darker);
-    border: solid 1px var(--colour-darker);
-    padding: 1em;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.button:hover, button:hover, .button:focus, button:focus {
-    background-color: var(--colour-darker);
-    color: var(--colour-light);
-}
-
-.button:active, .button:focus, button:active, button:focus {
-    outline: none;
-}
-
-/*
-  TEXT ELEMENTS -------------------
-*/
-
-a.link {
-    color: #505050;
-    text-decoration: none;
-    transition: all 200ms ease-in;
-    border-bottom: solid 1px #505050;
-}
-
-a.link:hover, a.link:focus {
-    padding-bottom: 5px;
-}
-
-/*
-  COMBINED ELEMENTS -------------------
-*/
-
-a img.hover {
-    transition: all 300ms;
-    margin-top: 15px;
-    width: 100%;
-    max-width: 700px;
-}
-
-a img.hover:hover {
-    transform: translateY(-15px);
-    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
-}
-
-/* Input Classes */
-
-.input-wrapper {
-    border: lightgrey solid 1px;
-    border-radius: 5px;
-    display: flex;
-    padding: 0.5em;
-    margin-bottom: 1em;
-}
-
-.input-wrapper label {
-    display: inline-block;
-    flex-grow: 0;
-    text-align: center;
-    margin-right: 10px;
-}
-
-.input-wrapper textarea {
-    width: 100%;
-    border: none;
-}
-
-input {
-    border: none;
-    border-left: lightgrey solid 1px;
-    font-size: 15px;
-    flex-grow: 1;
-    padding-left: 1em;
-    min-width: 10px;
-}
-
-input:focus {
-    background: var(--colour-light);
-    outline: none;
-    text-decoration: underline;
-}
-
-input:hover {
-    background: var(--colour-light);
-}
-
-input[type=radio] {
-    flex-grow: 0;
-}
-
-m-product-listing {
-    padding: 0 1em 1em 1em;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 img {
     width: 100%;
 }
-
-m-product-listing {
-    text-decoration: none;
-    color: black;
-    padding-top: 1em;
-    /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.062); */
-    display: block;
-    border-radius: 10px;
-    height: 100%;
-    transition: all 300ms;
-}
-
-m-product-listing button {
-  margin-top: 1em;
-}
-
-m-product-listing:hover, m-product-listing:focus {
-    transform: translateY(-15px);
-    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
-}
-
-m-product-listing img {
-    width: 100%;
-}
-
-m-product-listing a {
-  color: var(--colour-dark);
-  text-decoration: none;
-}
-
-m-product-listing figcaption {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 5px;
-}
-
-m-product-listing figure {
-    margin-bottom: 5px;
-}
-
-m-product-listing .price {
-    text-align: center;
-    color: var(--colour-dark);
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.cart {
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-@media all and (max-width: 767px) {
-  .cart {
-    box-shadow: none;
-    padding: 15px;
-  }
-
-  .cart .quantity,
-  .cart .price {
-    font-size: 0.8rem;
-  }
-}
-
-m-cart-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--colour-medium);
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-}
-
-m-cart-item .image-container {
-  max-width: 25%;
-}
-
-m-cart-item .title {
-  width: 25%;
-  margin: 0;
-  font-size: 0.8rem;
-}
-
-#checkout {
-    margin-top: 15px;
-}
-
-/* Colors */
-
-.colour-wrapper {
-    margin-top: 3em;
-    text-align: center;
-}
-
-.colour {
-    display: inline-block;
-    height: 6em;
-    width: 6em;
-    border-radius: 50%;
-    margin-right: 1em;
-    text-align: center;
-    padding-top: 2.25em;
-}
-
-.colour.light {
-    background-color: var(--colour-light);
-    border: 1px solid var(--colour-dark);
-}
-
-.colour.medium {
-    background-color: var(--colour-medium);
-    color: var(--colour-light);
-}
-
-.colour.dark {
-    background-color: var(--colour-dark);
-    color: var(--colour-light);
-}
-
-.colour.darker {
-    background-color: var(--colour-darker);
-    color: var(--colour-light);
-}
-
-/*
-  CUSTOM PAGE ELEMENTS -------------------
-*/
 
 .cards {
     display: inline-block;
@@ -540,6 +166,501 @@ m-cart-item .title {
     margin-bottom: 25px;
 }
 
+/* Credit Card Colours */
+.fa-cc-visa, .fa-cc-amex, .fa-cc-discover {
+    color: #afafaf;
+    margin-right: 0.6em;
+}
+
+.fa-cc-mastercard {
+    color: red;
+    margin-right: 0.6em;
+}
+
+footer {
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--colour-light);
+    text-align: center;
+    font-size: 13px;
+    color: var(--colour-medium);
+}
+
+
+######## ######## ##     ## ########
+   ##    ##        ##   ##     ##
+   ##    ##         ## ##      ##
+   ##    ######      ###       ##
+   ##    ##         ## ##      ##
+   ##    ##        ##   ##     ##
+   ##    ######## ##     ##    ##
+
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1::before {
+    content: "- ";
+}
+
+h1::after {
+    content: " -";
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: solid 1px black;
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+h4 {
+    margin-bottom: 0.25rem;
+}
+
+p {
+    margin-top: 0;
+    max-width: 50em;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        /* margin-top: 6rem; */
+    }
+
+    h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 1rem;
+        letter-spacing: 1px;
+    }
+
+    h4 {
+        margin-bottom: 0.25rem;
+    }
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    background-color: var(--colour-darker);
+    font-weight: 300;
+    padding: 1rem;
+    display: block;
+    border-radius: 5px;
+    color: var(--colour-light);
+
+    /* word-wrap: break-word; */
+    max-width: 50em;
+    overflow-x: scroll;
+}
+
+
+ ######  ########  ######  ######## ####  #######  ##    ##
+##    ## ##       ##    ##    ##     ##  ##     ## ###   ##
+##       ##       ##          ##     ##  ##     ## ####  ##
+ ######  ######   ##          ##     ##  ##     ## ## ## ##
+      ## ##       ##          ##     ##  ##     ## ##  ####
+##    ## ##       ##    ##    ##     ##  ##     ## ##   ###
+ ######  ########  ######     ##    ####  #######  ##    ##
+
+
+section {
+    margin-bottom: 25px;
+    padding: 2em;
+    background-color: var(--colour-light);
+    border: solid 1px var(--colour-light);
+    border-radius: 5px;
+    color: var(--colour-darker);
+}
+
+@media all and (max-width: 767px) {
+  section {
+    padding: 1em;
+  }
+}
+
+section p {
+    margin: 0 0 1em 0;
+}
+
+section a {
+    word-break: break-all;
+}
+
+body > section {
+    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--colour-darker);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    border-bottom: solid 1px black;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 1em auto;
+}
+
+section section {
+    margin-bottom: 0px;
+    background-color: var(--colour-light);
+    border-radius: 0px;
+    padding: 2em;
+}
+
+
+ ######  #### ########  ######## ########     ###    ########
+##    ##  ##  ##     ## ##       ##     ##   ## ##   ##     ##
+##        ##  ##     ## ##       ##     ##  ##   ##  ##     ##
+ ######   ##  ##     ## ######   ########  ##     ## ########
+      ##  ##  ##     ## ##       ##     ## ######### ##   ##
+##    ##  ##  ##     ## ##       ##     ## ##     ## ##    ##
+ ######  #### ########  ######## ########  ##     ## ##     ##
+
+
+m-sidebar {
+  width: 30%;
+}
+
+@media all and (max-width: 800px) {
+    m-sidebar {
+        width: 100%;
+    }
+}
+
+
+#### ##    ## ######## ######## ########     ###     ######  ######## #### ##     ## ########
+ ##  ###   ##    ##    ##       ##     ##   ## ##   ##    ##    ##     ##  ##     ## ##
+ ##  ####  ##    ##    ##       ##     ##  ##   ##  ##          ##     ##  ##     ## ##
+ ##  ## ## ##    ##    ######   ########  ##     ## ##          ##     ##  ##     ## ######
+ ##  ##  ####    ##    ##       ##   ##   ######### ##          ##     ##   ##   ##  ##
+ ##  ##   ###    ##    ##       ##    ##  ##     ## ##    ##    ##     ##    ## ##   ##
+#### ##    ##    ##    ######## ##     ## ##     ##  ######     ##    ####    ###    ########
+
+
+nav {
+    padding: 1em 0;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid var(--colour-light);
+    margin-bottom: 30px;
+}
+
+a.link-item {
+    margin: 0 10px 0px 10px;
+    color: var(--colour-light);
+    padding: 1em 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    white-space: nowrap;
+}
+
+a.link-item:hover, a.link-item:focus {
+    border-bottom: 1px var(--colour-light) solid;
+    padding-bottom: 0.25em;
+}
+
+.button, button {
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: unset;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--colour-darker);
+    border: solid 1px var(--colour-darker);
+    padding: 1em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button:hover, button:hover, .button:focus, button:focus {
+    background-color: var(--colour-darker);
+    color: var(--colour-light);
+}
+
+.button:active, .button:focus, button:active, button:focus {
+    outline: none;
+}
+
+a.link {
+    color: #505050;
+    text-decoration: none;
+    transition: all 200ms ease-in;
+    border-bottom: solid 1px #505050;
+}
+
+a.link:hover, a.link:focus {
+    padding-bottom: 5px;
+}
+
+a img.hover {
+    transition: all 300ms;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 700px;
+}
+
+a img.hover:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#### ##    ## ########  ##     ## ########
+ ##  ###   ## ##     ## ##     ##    ##
+ ##  ####  ## ##     ## ##     ##    ##
+ ##  ## ## ## ########  ##     ##    ##
+ ##  ##  #### ##        ##     ##    ##
+ ##  ##   ### ##        ##     ##    ##
+#### ##    ## ##         #######     ##
+
+
+.input-wrapper {
+    border: lightgrey solid 1px;
+    border-radius: 5px;
+    display: flex;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.input-wrapper label {
+    display: inline-block;
+    flex-grow: 0;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.input-wrapper textarea {
+    width: 100%;
+    border: none;
+}
+
+input {
+    border: none;
+    border-left: lightgrey solid 1px;
+    font-size: 15px;
+    flex-grow: 1;
+    padding-left: 1em;
+    min-width: 10px;
+}
+
+input:focus {
+    background: var(--colour-light);
+    outline: none;
+    text-decoration: underline;
+}
+
+input:hover {
+    background: var(--colour-light);
+}
+
+input[type=radio] {
+    flex-grow: 0;
+}
+
+m-product-listing {
+    padding: 0 1em 1em 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+########  ########   #######  ########  ##     ##  ######  ########
+##     ## ##     ## ##     ## ##     ## ##     ## ##    ##    ##
+##     ## ##     ## ##     ## ##     ## ##     ## ##          ##
+########  ########  ##     ## ##     ## ##     ## ##          ##
+##        ##   ##   ##     ## ##     ## ##     ## ##          ##
+##        ##    ##  ##     ## ##     ## ##     ## ##    ##    ##
+##        ##     ##  #######  ########   #######   ######     ##
+
+
+m-product-listing {
+    text-decoration: none;
+    color: black;
+    padding-top: 1em;
+    /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.062); */
+    display: block;
+    border-radius: 10px;
+    height: 100%;
+    transition: all 300ms;
+}
+
+m-product-listing button {
+  margin-top: 1em;
+}
+
+m-product-listing:hover, m-product-listing:focus {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+m-product-listing img {
+    width: 100%;
+}
+
+m-product-listing a {
+  color: var(--colour-dark);
+  text-decoration: none;
+}
+
+m-product-listing figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+m-product-listing figure {
+    margin-bottom: 5px;
+}
+
+m-product-listing .price {
+    text-align: center;
+    color: var(--colour-dark);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.description {
+    padding-left: 2em;
+}
+
+
+ ######     ###    ########  ########
+##    ##   ## ##   ##     ##    ##
+##        ##   ##  ##     ##    ##
+##       ##     ## ########     ##
+##       ######### ##   ##      ##
+##    ## ##     ## ##    ##     ##
+ ######  ##     ## ##     ##    ##
+
+
+.cart {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media all and (max-width: 767px) {
+  .cart {
+    box-shadow: none;
+    padding: 15px;
+  }
+
+  .cart .quantity,
+  .cart .price {
+    font-size: 0.8rem;
+  }
+}
+
+m-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--colour-medium);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+m-cart-item .image-container {
+  max-width: 25%;
+}
+
+m-cart-item .title {
+  width: 25%;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+#checkout {
+    margin-top: 15px;
+}
+
+
+ ######   #######  ##        #######  ##     ## ########
+##    ## ##     ## ##       ##     ## ##     ## ##     ##
+##       ##     ## ##       ##     ## ##     ## ##     ##
+##       ##     ## ##       ##     ## ##     ## ########
+##       ##     ## ##       ##     ## ##     ## ##   ##
+##    ## ##     ## ##       ##     ## ##     ## ##    ##
+ ######   #######  ########  #######   #######  ##     ##
+
+
+.colour-wrapper {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.colour {
+    display: inline-block;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    margin-right: 1em;
+    text-align: center;
+    padding-top: 2.25em;
+}
+
+.colour.light {
+    background-color: var(--colour-light);
+    border: 1px solid var(--colour-dark);
+}
+
+.colour.medium {
+    background-color: var(--colour-medium);
+    color: var(--colour-light);
+}
+
+.colour.dark {
+    background-color: var(--colour-dark);
+    color: var(--colour-light);
+}
+
+.colour.darker {
+    background-color: var(--colour-darker);
+    color: var(--colour-light);
+}
+
+
+ ######   ##     ## #### ########  ########
+##    ##  ##     ##  ##  ##     ## ##
+##        ##     ##  ##  ##     ## ##
+##   #### ##     ##  ##  ##     ## ######
+##    ##  ##     ##  ##  ##     ## ##
+##    ##  ##     ##  ##  ##     ## ##
+ ######    #######  #### ########  ########
+
+
 .type-demo {
     font-size: 20px;
     word-wrap: break-word;
@@ -549,6 +670,17 @@ m-cart-item .title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     word-wrap: break-word;
+}
+
+@media only screen and (min-width: 800px) {
+    .type-demo {
+        font-size: 30px;
+    }
+
+    .type-demo.logo {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 35px;
+    }
 }
 
 .type-demo.light {
@@ -563,35 +695,12 @@ m-cart-item .title {
     word-wrap: break-word;
 }
 
-/* Credit Card Colours */
-.fa-cc-visa, .fa-cc-amex, .fa-cc-discover {
-    color: #afafaf;
-    margin-right: 0.6em;
-}
-
-.fa-cc-mastercard {
-    color: red;
-    margin-right: 0.6em;
-}
-
 @media only screen and (min-width: 500px) {
     .title {
         font-size: 20px;
     }
 }
 
-@media only screen and (min-width: 800px) {
-    .type-demo {
-        font-size: 30px;
-    }
-
-    .type-demo.logo {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 35px;
-    }
-}
-
-/* Grid Layout */
 
 .grid-demo {
     font-size: 12px;
@@ -614,18 +723,14 @@ m-cart-item .title {
     line-height: 3em;
 }
 
-/* Footer */
 
-footer {
-    padding: 1em;
-    border-radius: 5px;
-    border: 1px solid var(--colour-light);
-    text-align: center;
-    font-size: 13px;
-    color: var(--colour-medium);
-}
-
-/* Product Page */
+##     ## ##     ##  ######  ####  ######
+###   ### ##     ## ##    ##  ##  ##    ##
+#### #### ##     ## ##        ##  ##
+## ### ## ##     ##  ######   ##  ##
+##     ## ##     ##       ##  ##  ##
+##     ## ##     ## ##    ##  ##  ##    ##
+##     ##  #######   ######  ####  ######
 
 
 #product-details #price{
@@ -649,12 +754,19 @@ footer {
     padding-left: 2em;
 }
 
-/* Music Posts Page */
 .music-posts iframe{
     padding: 2em;
 }
 
-/* Confirm Page */
+
+ ######   #######  ##    ## ######## #### ########  ##     ##
+##    ## ##     ## ###   ## ##        ##  ##     ## ###   ###
+##       ##     ## ####  ## ##        ##  ##     ## #### ####
+##       ##     ## ## ## ## ######    ##  ########  ## ### ##
+##       ##     ## ##  #### ##        ##  ##   ##   ##     ##
+##    ## ##     ## ##   ### ##        ##  ##    ##  ##     ##
+ ######   #######  ##    ## ##       #### ##     ## ##     ##
+
 
 #confirm-icon {
     font-size: 50px;
