@@ -17,7 +17,7 @@ class ProductListing extends HTMLElement {
           </figure>
           <div class="price">$${this.price}</div>
         </a>
-        <button>add to cart</button>
+        <button class="add-to-cart">add to cart</button>
         `
         this.innerHTML = template;
     }
