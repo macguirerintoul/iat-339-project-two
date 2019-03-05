@@ -626,6 +626,24 @@ footer {
 
 /* Product Page */
 
+
+#product-details #price{
+    margin-bottom: 1em;
+ }
+
+#product-details .info{
+   padding: 0;
+   padding-top: 1em;
+}
+
+@media only screen and (min-width: 1200px) {
+    #product-details .info{
+        padding-left: 2em;
+        padding-right: 1em;
+        padding-top: 0;
+    }
+}
+
 .description {
     padding-left: 2em;
 }
