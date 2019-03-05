@@ -619,3 +619,8 @@ footer {
 .description {
     padding-left: 2em;
 }
+
+/* Music Posts Page */
+.music-posts iframe{
+    padding: 2em;
+}
