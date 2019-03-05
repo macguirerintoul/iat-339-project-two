@@ -634,3 +634,13 @@ footer {
 .music-posts iframe{
     padding: 2em;
 }
+
+/* Confirm Page */
+
+#confirm-icon {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
