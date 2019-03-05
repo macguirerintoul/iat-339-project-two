@@ -22,6 +22,7 @@
   <script src="../js/components/m-header.js"></script>
   <script src="../js/components/m-footer.js"></script>
   <script src="../js/components/m-cart.js"></script>
+  <script src="../js/components/m-cart-item.js"></script>
   <script src="../js/components/m-product-listing.js"></script>
   <script src="../js/components/m-payment-form.js"></script>
 
@@ -352,14 +353,31 @@
       <p><code>m-cart</code></p>
 
       <h4>Sample code:</h4>
-      <pre><code id="cart-sample-code"></code></pre>
-      <!-- Inserts the sample code into the element above -->
-      <script type="text/javascript">
-        document.querySelector("#cart-sample-code").innerHTML = he.encode(commonTags.stripIndent(cartTemplate.innerHTML));
-      </script>
+      <pre>
+        <code id="cart-sample-code">
+&lt;div class=&quot;cart&quot;&gt;
+  &lt;m-cart&gt;
+    &lt;div slot=&quot;cart-items&quot;&gt;
+      &lt;m-cart-item src=&quot;../images/pfizer-tee.jpg&quot; title=&quot;Pfizer Tee&quot; quantity=&quot;2&quot; price=&quot;29.99&quot;&gt;&lt;/m-cart-item&gt;
+      &lt;m-cart-item src=&quot;../images/car-crash-hoodie-black.png&quot; title=&quot;Car Crash Hoodie - Black&quot; quantity=&quot;1&quot; price=&quot;59.99&quot;&gt;&lt;/m-cart-item&gt;
+      &lt;m-cart-item src=&quot;../images/infinity-tee.png&quot; title=&quot;Infinity Tee&quot; quantity=&quot;1&quot; price=&quot;29.99&quot;&gt;&lt;/m-cart-item&gt;
+    &lt;/div&gt;
+  &lt;/m-cart&gt;
+&lt;/div&gt;
+        </code>
+      </pre>
+
 
       <h4>Rendered element:</h4>
-      <m-cart></m-cart>
+      <div class="cart">
+        <m-cart>
+          <div slot="cart-items">
+            <m-cart-item src="../images/pfizer-tee.jpg" title="Pfizer Tee" quantity="2" price="29.99"></m-cart-item>
+            <m-cart-item src="../images/car-crash-hoodie-black.png" title="Car Crash Hoodie - Black" quantity="1" price="59.99"></m-cart-item>
+            <m-cart-item src="../images/infinity-tee.png" title="Infinity Tee" quantity="1" price="29.99"></m-cart-item>
+          </div>
+        </m-cart>
+      </div>
     </section>
 
   </section>
