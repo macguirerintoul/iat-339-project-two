@@ -16,9 +16,13 @@
   <link href="../css/layout.css" rel="stylesheet" type="text/css">
   <link href="../css/style.css" rel="stylesheet" type="text/css">
 
+  <!-- Add webcomponents.js - polyfills for custom elements on unsupported browsers -->
+  <script type="text/javascript" src="https://unpkg.com/@webcomponents/webcomponentsjs@2.2.7/webcomponents-loader.js"></script>
+
   <!-- import custom elements -->
   <script src="../js/components/m-header.js"></script>
   <script src="../js/components/m-cart.js"></script>
+  <script src="../js/components/m-cart-item.js"></script>
   <script src="../js/components/m-payment-form.js"></script>
   <script src="../js/components/m-footer.js"></script>
 </head>
@@ -30,7 +34,17 @@
       <div class="text">
         <h2>Checkout</h2>
 
-        <m-cart></m-cart>
+        <div class="cart">
+          <m-cart>
+            <div slot="cart-items">
+              <m-cart-item src="../images/pfizer-tee.jpg" title="Pfizer Tee" quantity="2" price="29.99"></m-cart-item>
+              <m-cart-item src="../images/car-crash-hoodie-black.png" title="Car Crash Hoodie - Black" quantity="1" price="59.99"></m-cart-item>
+              <m-cart-item src="../images/infinity-tee.png" title="Infinity Tee" quantity="1" price="29.99"></m-cart-item>
+            </div>
+          </m-cart>
+        </div>
+
+
         <m-payment-form></m-payment-form>
       </div>
     </section>

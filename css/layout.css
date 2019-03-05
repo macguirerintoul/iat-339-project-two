@@ -9,6 +9,8 @@
     Desktop: 1000px
 */
 
+/* Extra Small (Phone) */
+
 .container {
     max-width: 100%;
     margin-left: auto;
@@ -36,15 +38,129 @@ section div.with-sidebar {
     padding-right: 0;
 }
 
-@media only screen and (max-width: 500px) {
+section .text {
+    width: 100%;
+}
+
+/* Small (Phablet) */
+@media only screen and (min-width: 500px) {
     .container {
         max-width: 500px;
     }
+
+    .col-sm-1 {
+        width: 8.333%;
+    }
+
+    .col-sm-2 {
+        width: 16.666%;
+    }
+
+    .col-sm-3 {
+        width: 24.999%;
+    }
+
+    .col-sm-4 {
+        width: 33.333%;
+    }
+
+    .col-sm-5 {
+        width: 41.666%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.333%;
+    }
+
+    .col-sm-8 {
+        width: 66.666%;
+    }
+
+    .col-sm-9 {
+        width: 74.999%;
+    }
+
+    .col-sm-10 {
+        width: 83.333%;
+    }
+
+    .col-sm-11 {
+        width: 91.666%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
 }
 
+/* Medium (Tablet) */
 @media only screen and (min-width: 800px) {
     .container {
         max-width: 700px;
+    }
+
+    .col-md-1 {
+        width: 8.333%;
+    }
+
+    .col-md-2 {
+        width: 16.666%;
+    }
+
+    .col-md-3 {
+        width: 24.999%;
+    }
+
+    .col-md-4 {
+        width: 33.333%;
+    }
+
+    .col-md-5 {
+        width: 41.666%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.333%;
+    }
+
+    .col-md-8 {
+        width: 66.666%;
+    }
+
+    .col-md-9 {
+        width: 74.999%;
+    }
+
+    .col-md-10 {
+        width: 83.333%;
+    }
+
+    .col-md-11 {
+        width: 91.666%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    section div.with-sidebar {
+        width: 70%;
+        padding-right: 2em;
+    }
+}
+
+/* Large (Desktop) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1080px;
     }
 
     .col-1 {
@@ -94,17 +210,4 @@ section div.with-sidebar {
     .col-12 {
         width: 100%;
     }
-
-    section div.with-sidebar {
-        width: 70%;
-        padding-right: 2em;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1080px;
-    }
-
-    
 }
