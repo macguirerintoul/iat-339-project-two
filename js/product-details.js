@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     var productImageElement = document.getElementById("product-image");
 
     productNameElement.innerHTML = productName;
-    productPriceElement.innerHTML = productPrice;
+    productPriceElement.innerHTML = "$" + productPrice;
     productImageElement.src = '.' + productImage;
 })
 
