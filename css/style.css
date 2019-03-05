@@ -562,3 +562,9 @@ footer {
     font-size: 13px;
     color: var(--colour-medium);
 }
+
+/* Product Page */
+
+.description {
+    padding-left: 2em;
+}
