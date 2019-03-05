@@ -1,6 +1,7 @@
 class PaymentForm extends HTMLElement {
   constructor() {
     super();
+    /* html */
     this.template = `
     <h2>Payment Details</h2>
     <form action="/confirmation">
@@ -30,16 +31,9 @@ class PaymentForm extends HTMLElement {
         <div class="input-wrapper">
           <label>Cards Accepted: </label>
           <div class="cards">
-            <input type="radio" name="cardtype" id="visa" aria-label="Visa">
             <i class="fab fa-cc-visa"></i>
-
-            <input type="radio" name="cardtype" id="amex" aria-label="Amex">
             <i class="fab fa-cc-amex"></i>
-
-            <input type="radio" name="cardtype" id="mastercard" aria-label="MasterCard">
             <i class="fab fa-cc-mastercard"></i>
-
-            <input type="radio" name="cardtype" id="discover" aria-label="Discover">
             <i class="fab fa-cc-discover"></i>
           </div>
         </div>

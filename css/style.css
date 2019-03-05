@@ -383,7 +383,7 @@ img {
 @media all and (max-width: 767px) {
   .cart {
     box-shadow: none;
-    padding: 0;
+    /* padding: 0; */
   }
 
   .cart .quantity,
@@ -474,7 +474,7 @@ m-cart-item .title {
     font-size: 0.4em;
     float: right;
     margin-right: 20px;
-    margin-top: 13px;
+    /* margin-top: 13px; */
     color: var(--colour-light);
     cursor: pointer;
     text-decoration: none;
@@ -487,14 +487,19 @@ m-cart-item .title {
 }
 
 .logo-container .logo {
+    text-decoration: none;
+    color: var(--colour-light);
+    width: auto;
+}
+
+.logo-container .logo-wrapper {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     z-index: 1;
-    color: var(--colour-light);
-    text-decoration: none;
+    margin: 0 70px;
 }
 
 .logo-container .logo > div {
@@ -538,20 +543,14 @@ m-cart-item .title {
 }
 
 /* Credit Card Colours */
-.fa-cc-visa {
-    color: navy;
-}
-
-.fa-cc-amex {
-    color: blue;
+.fa-cc-visa, .fa-cc-amex, .fa-cc-discover {
+    color: #afafaf;
+    margin-right: 0.6em;
 }
 
 .fa-cc-mastercard {
     color: red;
-}
-
-.fa-cc-discover {
-    color: orange;
+    margin-right: 0.6em;
 }
 
 @media only screen and (min-width: 500px) {
