@@ -567,7 +567,8 @@ m-product-listing figcaption {
 }
 
 m-product-listing figure {
-    margin-bottom: 5px;
+  margin: 1em;
+  margin-bottom: 5px;
 }
 
 m-product-listing .price {
